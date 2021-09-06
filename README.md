@@ -45,7 +45,7 @@ Films
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Titane (Film details)  
-<img src="images/Titane.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Titane.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
