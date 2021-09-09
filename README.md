@@ -37,15 +37,16 @@ Extra aandacht voor de surface laag
 
 ### Je opdracht:
 Link naar de website: 
-https://www.ketelhuis.nl/
+https://www.nintendo.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Films 
-<img src="images/Films.png" width="375px" alt="omschrijving van de pagina">
+Home
+<img src="images/home.png" width="375px" alt="Nintendo Home">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Titane (Film details)  
-<img src="images/Titane.png" width="375px" alt="omschrijving van de pagina">
+Nintendo familie
+
+<img src="images/Nintendo-Switch-familie.png" width="375px" alt="Nintendo Familie">
  
 </details>
 
