@@ -41,12 +41,12 @@ https://www.nintendo.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home
-<img src="images/home.png" width="375px" alt="Nintendo Home">
+<img src="images/home.pdf" width="375px" alt="Nintendo Home">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Nintendo familie
 
-<img src="images/Nintendo-Switch-familie.png" width="375px" alt="Nintendo Familie">
+<img src="images/Nintendo-Switch-familie.pdf" width="375px" alt="Nintendo Familie">
  
 </details>
 
