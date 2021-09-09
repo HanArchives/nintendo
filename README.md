@@ -59,14 +59,17 @@ Nintendo familie
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+### de hele pagina: Home
+<img src="images/break1.png" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### de hele pagina: Nintendo Switch Familie
+<img src="images/break2.png" width="375px" alt="breakdown van de hele pagina">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### dynamisch deel: Menu
+<img src="images/break3.png" width="375px" alt="breakdown van een dynamisch deel">
+
+### wellicht nog een dynamisch deel carousel: 
+<img src="images/break4.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
