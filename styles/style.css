@@ -3,3 +3,373 @@
   box-sizing:border-box;  
 }
 
+body {
+  font-family: 'avenir';
+}
+
+
+
+
+
+
+/* Portrait 
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: portrait) {
+
+}
+
+Landscape 
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: landscape) {
+
+}
+
+*/
+
+
+
+/* Begnning NAV********************************** */
+
+
+nav {
+  position:relative;
+  background-color:var(--background-color-nintendo-red);
+  margin: auto;
+  width: 100%;
+  display: flex;
+  padding: 1em;
+  flex-wrap:wrap;  
+  align-items: baseline;
+  gap:1em;
+}
+
+nav ul{
+  /*Positie nav*/
+  position:sticky;
+  top:0;
+  margin:0;
+  padding:.5em;
+  /* Punten weghalen*/
+  list-style-type: none;
+  
+  /*flexbox*/
+  display:flex; 
+  justify-content: flex-end;
+  /*Ruimte tussen nav elementen*/
+  gap:1em; 
+  
+}
+
+
+nav a {
+  /* Opmaak tekst*/
+  color: #FFF;  
+  text-decoration: none;
+  font-weight: bold;
+  font-size:x-small;
+  /*flexbox*/
+  display: flex;
+  align-items: center;  
+  flex-direction:column; 
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a img{
+  width: 7em;
+  height: auto;
+}
+
+
+nav ul img {
+  width: 3em;
+  height: auto;
+}
+
+
+
+
+/* End of NAV**************************************** */
+
+
+
+
+/* Begnning of MAIN********************************** */
+
+main {
+  background-color: white;
+}
+
+/* End of MAIN*************************************** */
+
+
+
+/* Begnning of FOOTER********************************** */
+Footer{
+  background-color: #c40010 ;
+}
+
+.headerfooter { 
+  background-color:var(--background-color-nintendo-red) ;
+}
+
+/* End of FOOTER*************************************** */
+
+
+
+
+
+
+
+/* Begnning of IMAGES********************************** */
+
+.partone li:hover {
+  background-color: cadetblue;
+  color: white;
+  position: relative; 
+  top: -5px; 
+  transition: 0.8s;
+
+  -webkit-box-shadow: 0px 10px 20px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 20px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+.partone li:active {
+ 
+  box-shadow: none;
+}
+
+.partone img{
+  margin-top: 5px;
+  display:block;
+  max-width:100%;
+
+}
+
+
+
+/* End of IMAGES************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --background-color-nintendo-red: #e60012 ;
+  --accent-background-color:black;
+  --secondary-background-color:rgba(0 0 0 / .75);
+  --third-background-color:rgb(243, 243, 56);
+
+  --accent-color:white;
+  --secondary-color:black;
+
+  --shadow-color:rgba(0 0 0 / .5);
+}
+
+ li {
+  list-style-type: none;
+}
+
+/**********************************/
+/* CODE VOOR li MET id="overflow" */
+/**********************************/
+#overflow {
+  position:relative;
+  /* om wat uit het element steekt te verbergen */
+  overflow:hidden;
+}
+
+#overflow h2 {
+  position:absolute;
+  left:17.5%;
+  top: 0.2em;
+  
+  width:60%;
+  margin:0;
+  padding:.5em;
+  transform:rotate(0deg);
+  
+  background-color:var(--third-background-color);
+  box-shadow:.25em .25em .25em var(--shadow-color);
+  border-radius:0 0 0.5em 0.5em;
+  
+  text-align:center;
+  color:var(--secondary-color);
+
+  text-transform: uppercase;
+  /* bonus: tijd om naar de hover-state te veranderen */
+  transition:.5s;
+}
+
+#overflow:hover h2 {
+  /* bonus: padding aan de bovenkant is groter bij hoveren */
+  padding:2em .5em .5em;
+}
+
+
+
+/*************************************/
+/* CODE VOOR li MET id="boven" */
+/*************************************/
+
+#boven {
+  position:relative;
+}
+
+#boven h2 {
+  position:absolute;
+  /* 0 vanaf de linkerkant */
+  left:0;
+  /* en 0 vanaf de rechterkant - dus volle breedte */
+  right:0;
+  top:0;
+
+  margin:0;
+  padding:.5em;
+  background-color:var(--accent-background-color);
+  color:var(--accent-color);
+}
+
+
+/*************************************/
+/* CODE VOOR li MET id="onder" */
+/*************************************/
+#onder {
+  position:relative;
+}
+
+#onder h2 {
+  position:absolute;
+   /* 0 vanaf de linkerkant */
+  left:0;
+  /* 0 vanaf de rechterkant */
+  right:0;
+  /* 0 vanaf de onderkant */
+  bottom:0;
+  text-align:center;
+  margin:0;
+  padding:.5em;
+  background-color:var(--secondary-background-color);
+  color:var(--accent-color);
+}
+
+
+/****************************************/
+/* CODE VOOR li MET id="ondermetomlijning" */
+/****************************************/
+#ondermetomlijning {
+  /* jouw code hier */
+  position:relative;
+}
+
+#ondermetomlijning h2:first-of-type {
+  text-transform: uppercase;
+  position:absolute;
+  /* 1em vanaf de linkerkant */
+  left:1em;
+  /* en 1em vanaf de rechterkant */
+  right:1em;
+  bottom:1em;
+  
+  margin:0;
+  padding:.5em;
+  
+  background-color:var(--accent-background-color);
+  border:solid .25em var(--accent-color);
+  text-align:center;
+  color:var(--accent-color);
+}
+
+/****************************************/
+/* CODE VOOR li MET id="ondermetomlijning" */
+/****************************************/
+#onderenboven {
+  position:relative;
+}
+
+#onderenboven h2:first-of-type {
+  text-transform: uppercase;
+  position:absolute;
+  /* 1em vanaf de linkerkant */
+  left:1em;
+  /* en 1em vanaf de rechterkant */
+  right:1em;
+  bottom:1em;
+  
+  margin:0;
+  padding:.5em;
+  
+  background-color:var(--accent-background-color);
+  border:solid .25em var(--accent-color);
+  text-align:center;
+  color:var(--accent-color);
+}
+
+#onderenboven h2:last-of-type {
+    position:absolute;
+    /* 0 vanaf de linkerkant */
+    left:0;
+    /* en 0 vanaf de rechterkant - dus volle breedte */
+    right:0;
+    top:0;
+
+    margin:0;
+    padding:.5em;
+
+    background-image:linear-gradient( rgba(0,0,0,1),rgba(0,0,0,1), rgba(0, 162, 255, .25) );
+    text-align:center;
+    color:var(--accent-color);
+}
+
+
+
+
+/************************************/
+/* CODE VOOR li MET id="metverloop" */
+/************************************/
+#metgradient {
+  position:relative;
+}
+
+#metgradient h2 {
+  /* jouw code hier */
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+
+  margin:0;
+  padding:.5em .5em .5em;
+  
+  /* van helemaal transparant zwart naar bijna transparant zwart */
+  background-image:linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1) );
+  text-align:center;
+  color:var(--accent-color);
+}
+
