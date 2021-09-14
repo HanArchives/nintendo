@@ -1,4 +1,6 @@
-/* CSS Document */
+/***********************/
+/* CODE VOOR ALGEMEEN" */
+/***********************/
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -7,46 +9,34 @@ body {
   font-family: 'avenir';
 }
 
-
-
-
-
-
-/* Portrait 
-
-@media only screen
-
-and (min-device-width: 375px)
-
-and (max-device-width: 667px)
-
-and (-webkit-min-device-pixel-ratio: 2)
-
-and (orientation: portrait) {
-
+main {
+  background-color: white;
 }
 
-Landscape 
-
-@media only screen
-
-and (min-device-width: 375px)
-
-and (max-device-width: 667px)
-
-and (-webkit-min-device-pixel-ratio: 2)
-
-and (orientation: landscape) {
-
+h2{
+  font-size: 16px;
 }
 
-*/
+
+/*******************/
+/* CODE VOOR ROOT" */
+/*******************/
+:root {
+  --background-color-nintendo-red: #e60012 ;
+  --accent-background-color:black;
+  --secondary-background-color:rgba(0 0 0 / .75);
+  --third-background-color:rgb(243, 243, 56);
+
+  --accent-color:white;
+  --secondary-color:black;
+
+  --shadow-color:rgba(0 0 0 / .5);
+}
 
 
-
-/* Begnning NAV********************************** */
-
-
+/****************/
+/* CODE VOOR NAV*/
+/****************/
 nav {
   position:relative;
   background-color:var(--background-color-nintendo-red);
@@ -55,7 +45,8 @@ nav {
   display: flex;
   padding: 1em;
   flex-wrap:wrap;  
-  align-items: baseline;
+  justify-content: flex-end;
+  align-items:center;
   gap:1em;
 }
 
@@ -70,12 +61,11 @@ nav ul{
   
   /*flexbox*/
   display:flex; 
-  justify-content: flex-end;
+  align-items: center;
   /*Ruimte tussen nav elementen*/
   gap:1em; 
   
 }
-
 
 nav a {
   /* Opmaak tekst*/
@@ -93,36 +83,21 @@ nav a:hover {
   text-decoration: underline;
 }
 
-nav a img{
+nav img {
+  width: 3em;
+  height: auto;
+}
+
+/* Selecteren van de eerste li img */
+nav li:nth-of-type(1) img {
   width: 7em;
   height: auto;
 }
 
 
-nav ul img {
-  width: 3em;
-  height: auto;
-}
-
-
-
-
-/* End of NAV**************************************** */
-
-
-
-
-/* Begnning of MAIN********************************** */
-
-main {
-  background-color: white;
-}
-
-/* End of MAIN*************************************** */
-
-
-
-/* Begnning of FOOTER********************************** */
+/********************/
+/* CODE VOOR FOOTER */
+/********************/
 Footer{
   background-color: #c40010 ;
 }
@@ -131,70 +106,41 @@ Footer{
   background-color:var(--background-color-nintendo-red) ;
 }
 
-/* End of FOOTER*************************************** */
 
-
-
-
-
-
-
-/* Begnning of IMAGES********************************** */
+/************************************/
+/* CODE VOOR UL MET class="partone" */
+/************************************/
+.partone{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  flex-direction:column;
+}
 
 .partone li:hover {
-  background-color: cadetblue;
-  color: white;
-  position: relative; 
+  background-color:var(--secondary-background-color);
+  color:var(--accent-color);
+  /* position: relative; */
   top: -5px; 
   transition: 0.8s;
-
+  overflow: hidden;
   -webkit-box-shadow: 0px 10px 20px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: 0px 10px 20px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-
 }
 
 .partone li:active {
- 
   box-shadow: none;
 }
 
 .partone img{
   margin-top: 5px;
-  display:block;
-  max-width:100%;
-
+  width:100%;
 }
 
-
-
-/* End of IMAGES************************************** */
-
-
-
-
-
-
-
-
-
-
-
-
-:root {
-  --background-color-nintendo-red: #e60012 ;
-  --accent-background-color:black;
-  --secondary-background-color:rgba(0 0 0 / .75);
-  --third-background-color:rgb(243, 243, 56);
-
-  --accent-color:white;
-  --secondary-color:black;
-
-  --shadow-color:rgba(0 0 0 / .5);
-}
-
- li {
+.partone li {
   list-style-type: none;
 }
+
 
 /**********************************/
 /* CODE VOOR li MET id="overflow" */
@@ -223,21 +169,19 @@ Footer{
   color:var(--secondary-color);
 
   text-transform: uppercase;
-  /* bonus: tijd om naar de hover-state te veranderen */
+  /* Tijd om naar de hover-state te veranderen */
   transition:.5s;
 }
 
 #overflow:hover h2 {
-  /* bonus: padding aan de bovenkant is groter bij hoveren */
+  /* Padding aan de bovenkant is groter bij hoveren */
   padding:2em .5em .5em;
 }
 
 
-
-/*************************************/
+/*******************************/
 /* CODE VOOR li MET id="boven" */
-/*************************************/
-
+/*******************************/
 #boven {
   position:relative;
 }
@@ -257,9 +201,9 @@ Footer{
 }
 
 
-/*************************************/
+/*******************************/
 /* CODE VOOR li MET id="onder" */
-/*************************************/
+/*******************************/
 #onder {
   position:relative;
 }
@@ -280,11 +224,10 @@ Footer{
 }
 
 
-/****************************************/
+/*******************************************/
 /* CODE VOOR li MET id="ondermetomlijning" */
-/****************************************/
+/*******************************************/
 #ondermetomlijning {
-  /* jouw code hier */
   position:relative;
 }
 
@@ -306,9 +249,10 @@ Footer{
   color:var(--accent-color);
 }
 
-/****************************************/
-/* CODE VOOR li MET id="ondermetomlijning" */
-/****************************************/
+
+/***************************************************/
+/* CODE VOOR li MET id="ondermetomlijning + boven" */
+/***************************************************/
 #onderenboven {
   position:relative;
 }
@@ -348,17 +292,14 @@ Footer{
 }
 
 
-
-
-/************************************/
-/* CODE VOOR li MET id="metverloop" */
-/************************************/
+/*************************************/
+/* CODE VOOR li MET id="metgradient" */
+/*************************************/
 #metgradient {
   position:relative;
 }
 
 #metgradient h2 {
-  /* jouw code hier */
   position:absolute;
   left:0;
   right:0;
