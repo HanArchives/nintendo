@@ -50,7 +50,7 @@ nav {
   gap:1em;
 }
 
-nav ul{
+nav ul {
   /*Positie nav*/
   position:sticky;
   top:0;
@@ -112,15 +112,13 @@ Footer{
 /************************************/
 .partone{
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;  
   flex-direction:column;
 }
 
 .partone li:hover {
   background-color:var(--secondary-background-color);
   color:var(--accent-color);
-  /* position: relative; */
+  position: relative;
   top: -5px; 
   transition: 0.8s;
   overflow: hidden;
