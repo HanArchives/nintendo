@@ -7,10 +7,27 @@
 
 body {
   font-family: 'avenir';
+  position: relative;
 }
+
+header{
+  position: sticky;
+  top:0;
+  margin:0;
+  z-index: 10;
+  width: 100%;
+} 
 
 main {
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+main ul {
+  max-width:32em;
+  padding:0;
 }
 
 h2{
@@ -38,33 +55,30 @@ h2{
 /* CODE VOOR NAV*/
 /****************/
 nav {
-  position:relative;
   background-color:var(--background-color-nintendo-red);
-  margin: auto;
-  width: 100%;
-  display: flex;
+  max-width: 100%;
   padding: 1em;
+  display: flex;
   flex-wrap:wrap;  
   justify-content: flex-end;
   align-items:center;
-  gap:1em;
 }
 
 nav ul {
   /*Positie nav*/
-  position:sticky;
   top:0;
   margin:0;
   padding:.5em;
+
   /* Punten weghalen*/
   list-style-type: none;
   
   /*flexbox*/
   display:flex; 
   align-items: center;
+
   /*Ruimte tussen nav elementen*/
   gap:1em; 
-  
 }
 
 nav a {
@@ -84,13 +98,13 @@ nav a:hover {
 }
 
 nav img {
-  width: 3em;
+  max-width: 3em;
   height: auto;
 }
 
 /* Selecteren van de eerste li img */
 nav li:nth-of-type(1) img {
-  width: 7em;
+  max-width: 7em;
   height: auto;
 }
 
@@ -108,35 +122,37 @@ Footer{
 
 
 /************************************/
-/* CODE VOOR UL MET class="partone" */
+/* CODE VOOR UL MET class="container" */
 /************************************/
-.partone{
-  display: flex;
-  flex-direction:column;
+.container{
+  top:0;
+  margin:0.2em;
 }
 
-.partone li:hover {
+.container li:hover {
   background-color:var(--secondary-background-color);
   color:var(--accent-color);
-  position: relative;
-  top: -5px; 
+  top: -1em; 
   transition: 0.8s;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 10px 20px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 0px 10px 20px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  overflow: hidden; 
+  box-shadow: 0em .4em .4em black;
 }
 
-.partone li:active {
+.container li:active {
   box-shadow: none;
 }
 
-.partone img{
-  margin-top: 5px;
+.container img{
   width:100%;
+  border-radius: 2%;
 }
 
-.partone li {
+.container li {
   list-style-type: none;
+}
+
+.container h2 {
+  overflow: hidden;
 }
 
 
@@ -145,14 +161,12 @@ Footer{
 /**********************************/
 #overflow {
   position:relative;
-  /* om wat uit het element steekt te verbergen */
-  overflow:hidden;
 }
 
 #overflow h2 {
   position:absolute;
   left:17.5%;
-  top: 0.2em;
+  top: 0em;
   
   width:60%;
   margin:0;
@@ -169,6 +183,9 @@ Footer{
   text-transform: uppercase;
   /* Tijd om naar de hover-state te veranderen */
   transition:.5s;
+
+  /* om wat uit het element steekt te verbergen */
+  overflow:hidden;
 }
 
 #overflow:hover h2 {
@@ -197,7 +214,6 @@ Footer{
   background-color:var(--accent-background-color);
   color:var(--accent-color);
 }
-
 
 /*******************************/
 /* CODE VOOR li MET id="onder" */
@@ -306,9 +322,36 @@ Footer{
   margin:0;
   padding:.5em .5em .5em;
   
-  /* van helemaal transparant zwart naar bijna transparant zwart */
-  background-image:linear-gradient( rgba(0,0,0,0), rgba(0,0,0,1) );
+  /* van helemaal transparant zwart naar zwart */
+  background-image:linear-gradient( rgba(0,0,0,1),rgba(0,0,0,0) );
   text-align:center;
   color:var(--accent-color);
+}
+
+
+
+
+
+/*************inspiratie*************/
+
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  margin: 1em;
+}
+
+.hamburger div {
+  position: relative;
+  width: 2em;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 4px;
+  transition: all 0.3s ease-in-out;
 }
 
