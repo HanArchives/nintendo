@@ -12,8 +12,10 @@ body {
 
 header{
   position: sticky;
+
   top:0;
   margin:0;
+
   z-index: 10;
   width: 100%;
 } 
@@ -55,13 +57,12 @@ h2{
 /* CODE VOOR NAV*/
 /****************/
 nav {
-  background-color:var(--background-color-nintendo-red);
+  background-color: var(--background-color-nintendo-red);
   max-width: 100%;
   padding: 1em;
   display: flex;
-  flex-wrap:wrap;  
-  justify-content: flex-end;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -69,6 +70,7 @@ nav ul {
   top:0;
   margin:0;
   padding:.5em;
+  width: 100%;
 
   /* Punten weghalen*/
   list-style-type: none;
@@ -76,7 +78,7 @@ nav ul {
   /*flexbox*/
   display:flex; 
   align-items: center;
-
+  flex-wrap: wrap;
   /*Ruimte tussen nav elementen*/
   gap:1em; 
 }
@@ -87,6 +89,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size:x-small;
+
   /*flexbox*/
   display: flex;
   align-items: center;  
@@ -103,11 +106,36 @@ nav img {
 }
 
 /* Selecteren van de eerste li img */
+nav li:nth-of-type(1) {
+  margin-right: auto;
+}
+
 nav li:nth-of-type(1) img {
   max-width: 7em;
   height: auto;
 }
 
+nav ul:first-of-type {
+  display: none;
+}
+
+/* Hamburger */
+.hamburgermenu {
+  margin: 1em;
+}
+
+.hamburgermenu div {
+  position: relative;
+
+  width: 2em;
+  height: 3px;
+
+  margin-top: 4px;
+
+  border-radius: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
 
 /********************/
 /* CODE VOOR FOOTER */
@@ -121,44 +149,50 @@ Footer{
 }
 
 
-/************************************/
-/* CODE VOOR UL MET class="container" */
-/************************************/
-.container{
+/******************************************/
+/* CODE VOOR SECTION MET class="newsfeed" */
+/******************************************/
+.newsfeed{
   top:0;
   margin:0.2em;
 }
 
-.container li:hover {
+.newsfeed li:hover {
+  top: -1em; 
+
   background-color:var(--secondary-background-color);
   color:var(--accent-color);
-  top: -1em; 
   transition: 0.8s;
   overflow: hidden; 
   box-shadow: 0em .4em .4em black;
 }
 
-.container li:active {
+.newsfeed li:active {
   box-shadow: none;
 }
 
-.container img{
+.newsfeed img{
   width:100%;
-  border-radius: 2%;
+  border-radius: 1em;
 }
 
-.container li {
+.newsfeed li {
   list-style-type: none;
 }
 
-.container h2 {
+.newsfeed h2 {
   overflow: hidden;
 }
 
-
+/******************************************/
+/* CODE PER H2 IN SECTIOEN .newsfeed */
+/******************************************/
 /**********************************/
 /* CODE VOOR li MET id="overflow" */
 /**********************************/
+
+/* !!!!!!!!!!!! Namen nog aanpassen naar wat logisch klinkt en id naar class veranderen !!!!!!!!!!!!!! */
+
 #overflow {
   position:relative;
 }
@@ -203,16 +237,17 @@ Footer{
 
 #boven h2 {
   position:absolute;
-  /* 0 vanaf de linkerkant */
+  
   left:0;
-  /* en 0 vanaf de rechterkant - dus volle breedte */
   right:0;
   top:0;
 
   margin:0;
   padding:.5em;
+
   background-color:var(--accent-background-color);
   color:var(--accent-color);
+  border-radius: 1em 1em 0 0; 
 }
 
 /*******************************/
@@ -224,17 +259,19 @@ Footer{
 
 #onder h2 {
   position:absolute;
-   /* 0 vanaf de linkerkant */
+
   left:0;
-  /* 0 vanaf de rechterkant */
   right:0;
-  /* 0 vanaf de onderkant */
   bottom:0;
-  text-align:center;
+
   margin:0;
   padding:.5em;
+
+  overflow: hidden;
+  text-align:center;
   background-color:var(--secondary-background-color);
   color:var(--accent-color);
+  border-radius: 0 0 1em 1em; 
 }
 
 
@@ -246,17 +283,16 @@ Footer{
 }
 
 #ondermetomlijning h2:first-of-type {
-  text-transform: uppercase;
   position:absolute;
-  /* 1em vanaf de linkerkant */
+
   left:1em;
-  /* en 1em vanaf de rechterkant */
   right:1em;
   bottom:1em;
   
   margin:0;
   padding:.5em;
   
+  text-transform: uppercase;
   background-color:var(--accent-background-color);
   border:solid .25em var(--accent-color);
   text-align:center;
@@ -272,17 +308,16 @@ Footer{
 }
 
 #onderenboven h2:first-of-type {
-  text-transform: uppercase;
   position:absolute;
-  /* 1em vanaf de linkerkant */
+
   left:1em;
-  /* en 1em vanaf de rechterkant */
   right:1em;
   bottom:1em;
   
   margin:0;
   padding:.5em;
   
+  text-transform: uppercase;
   background-color:var(--accent-background-color);
   border:solid .25em var(--accent-color);
   text-align:center;
@@ -291,7 +326,6 @@ Footer{
 
 #onderenboven h2:last-of-type {
     position:absolute;
-    /* 0 vanaf de linkerkant */
     left:0;
     /* en 0 vanaf de rechterkant - dus volle breedte */
     right:0;
@@ -303,6 +337,7 @@ Footer{
     background-image:linear-gradient( rgba(0,0,0,1),rgba(0,0,0,1), rgba(0, 162, 255, .25) );
     text-align:center;
     color:var(--accent-color);
+    border-radius: 1em 1em 0 0;
 }
 
 
@@ -315,11 +350,11 @@ Footer{
 
 #metgradient h2 {
   position:absolute;
+
   left:0;
   right:0;
   bottom:0;
 
-  margin:0;
   padding:.5em .5em .5em;
   
   /* van helemaal transparant zwart naar zwart */
@@ -332,26 +367,4 @@ Footer{
 
 
 
-/*************inspiratie*************/
-
-#toggle {
-  display: none;
-}
-
-/**
-  Hamburger
-**/
-.hamburger {
-  margin: 1em;
-}
-
-.hamburger div {
-  position: relative;
-  width: 2em;
-  height: 3px;
-  border-radius: 3px;
-  background-color: white;
-  margin-top: 4px;
-  transition: all 0.3s ease-in-out;
-}
 
