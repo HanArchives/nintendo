@@ -12,18 +12,15 @@
 
 <body>
 	<header>
-
 		<nav>
-
-			<!-- Div voor opmaak hamburger menu -->
-			<label class="hamburgermenu">
+			<!-- Div voor opmaak hamburger menu (word een toggle) -->
+			<button class="hamburgermenu">
 				<div class="top-bun"></div>
 				<div class="patty"></div>
 				<div class="bottom-bun"></div>
-			</label>
+			</button>
 
-
-			<!-- kopjes voor de hamburger menu-->
+			<!-- kopjes voor de hamburger menu: staat nog op display:none; (met JS actief maken)-->
 			<ul>
 				<li>
 					<img src="" alt="" />
@@ -81,72 +78,134 @@
 						<img src="images/login.png" alt="Inloggen" />Inloggen</a>
 				</li>
 			</ul>
-
 		</nav>
-
 	</header>
 
 	<main>
 
-		<ul class="nsmodels">
+		<!-- Section voor de NS modellen -->
+		<section class="nsmodels">
+			<ul>
 
-			<li>
-				<a href="#" target="_blank">
-					<img src="#" alt="#" /></a>
-				<h2>Titel</h2>
-				<button>Meer zien</button>
-			</li>
+				<li>
+					<a href="#">
+						<img src="images/NSwitch_family_switch_oled.png" alt="NS Oled" />
+						<h2>Nintendo Switch</h2>
+						<p>OLED-Model</p>
+						<button>Meer zien!</button>
+					</a>
+				</li>
 
-			<li>
-				<a href="#" target="_blank">
-					<img src="#" alt="#" /></a>
-				<h2>Titel</h2>
-				<button>Meer zien</button>
-			</li>
+				<li>
+					<a href="#">
+						<img src="images/NSwitch_family_switch.png" alt="NS Switch" />
+						<h2>Nintendo Switch</h2>
+						<button>Meer zien!</button>
+					</a>
+				</li>
 
-			<li>
-				<a href="#" target="_blank">
-					<img src="#" alt="#" /></a>
-				<h2>Titel</h2>
-				<button>Meer zien</button>
-			</li>
+				<li>
+					<a href="#">
+						<img src="images/NSwitch_family_switch_lite.png" alt="NS Lite" />
+						<h2>Ninetdo Switch Lite</h2>
+						<button>Meer zien!</button>
+					</a>
+				</li>
 
-			<li>
-				<a href="#" target="_blank">
-					<img src="#" alt="#" /></a>
-				<h2>Titel</h2>
-				<button>Meer zien</button>
-			</li>
-		</ul>
+			</ul>
+		</section>
 
-		<button>Welke Nintendo Switch past het beste bij me?</button>
-		<button>Accessoires</button>
-		<button>Nintendo Switch-software</button>
+		<!-- Section voor buttons-->
+		<section class="buttons">
+			<a href="#">
+				<button>Welke Nintendo Switch past het beste bij me?</button></a>
 
-		<ul class"nsonline">
-			<li>
-				<a href="#" target="_blank">
-					<img src="#" alt="#" /></a>
-			</li>
+			<a href="#">
+				<button>Accessoires</button></a>
 
-			<li>
-				<h2></h2>
-				<p></p>
-			</li>
+			<a href="#">
+				<button>Nintendo Switch-software</button></a>
+		</section>
 
-			<li>
-				<a href="#" target="_blank">
-					<img src="#" alt="#" /></a>
-			</li>
+		<!-- Section voor NS Online-->
 
-			<li>
-				<h2></h2>
-				<p></p>
-			</li>
+		<section class="nsonline">
 
-		</ul>
+			<a href="#">
+				<img src="images/nso-fam.png" alt="#" />
+				<img src="images/nso-logo.png" alt="#" />
+				<h2>Nintendo Switch Online</h2>
+				<p>Haal meer uit je Nintendo Switch met de betaalde Nintendo Switch Online-ledenservice</p>
+			</a>
 
-		<ul class="carousel">
+			<a href="#">
+				<img src="images/parents.png" alt="#" />
+				<img src="images/parental-logo_nl.png" alt="#" />
+				<h2>Ouderlijk toezicht voor Nintendo Switch</h2>
+				<p>Een leuke en veilige game-ervaring voor je kind</p>
+			</a>
+
+		</section>
+
+		<!-- Section voor slidehow carousel -->
+
+
+		<section class="slider">
+			<ul class="#">
+
+				<li class="slide">
+					<a href="#">
+					<img src="images/carousel1.jpeg" alt=""/></a>
+				</li>
+
+				<li class="slide">
+					<a href="#">
+					<img src="images/carousel2.jpeg" alt=""/></a>
+				</li>
+
+				<li class="slide">
+					<a href="#">
+					<img src="images/carousel3.jpeg" alt=""/></a>
+				</li>
+
+				<li class="slide">
+					<a href="#">
+					<img src="images/carousel4.jpeg" alt=""/></a>
+				</li>
+
+				<li class="slide">
+					<a href="#">
+					<img src="images/carousel5.jpeg" alt=""/></a>
+				</li>
+
+				<li class="slide">
+					<a href="#">
+					<img src="images/carousel6.jpeg" alt=""/></a>
+				</li>
+
+			</ul>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <ul class="carousel">
 
 			<li>
 				<img src="" alt="" />
@@ -167,44 +226,72 @@
 				<img src="" alt="" />
 				<a href=""></a>
 			</li>
-		</ul>
-
-		<ul class="socialmedia">
-
-			<li>
-				<img src="" alt="" />
-				<a href=""></a>
-			</li>
-
-			<li>
-				<img src="" alt="" />
-				<a href=""></a>
-			</li>
-
-			<li>
-				<img src="" alt="" />
-				<a href=""></a>
-			</li>
-
-		</ul>
-	</main>
+		</ul> -->
 
 
-	<footer>
-		<div class="headerfooter">
-			<h2> Dit is de footer</h2>
-		</div>
+		<!-- Section voor de socialmedia iconen -->
+		<section class="socialmedia">
+			<h2>Delen op:</h2>
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/Nintendo/">
+						<img src="images/facebook.png" alt="Facebook" /></a>
+				</li>
 
-		<ul>
-			<li><a href="#">Nintendo E-shop</a></li>
-			<li><a href="#">Nintendo Kids</a></li>
-			<li><a href="#">Ouders</a></li>
-			<li><a href="#">Support en Contact</a></li>
-		</ul>
-	</footer>
+				<li>
+					<a href="https://twitter.com/nintendonl?lang=en">
+						<img src="images/twitter.png" alt="Twitter" /> </a>
+				</li>
+
+				<li>
+					<a href="https://www.whatsapp.com/">
+						<img src="images/whatsapp.png" alt="Whatsapp" /></a>
+				</li>
+			</ul>
+		</section>
+
+		<footer>
+			<section class="headerfooter">
+				<a href="index.html">
+					<img src="images/logo.png" alt="Home" /></a>
+
+				<select name="language" class="language_select">
+					<option value="">Land: Nederland</option>
+					<option value="english">Verenige Staten</option>
+					<option value="spanish">Spanje</option>
+					<option value="french">Frankrijk</option>
+					<option value="korean">Korea</option>
+					<option value="japanese">Japan</option>
+					<option value="dutch">Nederland</option>
+				</select>
 
 
-	<script src="scripts/script.js"></script>
+
+
+			</section>
+
+			<section class="mainfooter">
+				<ul>
+					<li><a href="#">Nintendo E-shop</a></li>
+					<li><a href="#">Nintendo Kids</a></li>
+					<li><a href="#">Ouders</a></li>
+					<li><a href="#">Support en Contact</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="#">Over het bedrijf</a></li>
+					<li><a href="#">Vacatures</a></li>
+					<li><a href="#">Privacybeleid van de website en de My Nintendo Store</a></li>
+					<li><a href="#">My Nintendo Store: Algemene verkoopvoorwaarden</a></li>
+					<li><a href="#">Cookie-instellingen</a></li>
+				</ul>
+
+			</section>
+
+		</footer>
+
+
+		<script src="scripts/script.js"></script>
 </body>
 
 </html>

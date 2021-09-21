@@ -14,12 +14,12 @@
 
 	<header>
 		<nav>
-			<!-- Div voor opmaak hamburger menu -->
-			<label class="hamburgermenu">
+			<!-- Div voor opmaak hamburger menu (word een toggle) -->
+			<button class="hamburgermenu">
 				<div class="top-bun"></div>
 				<div class="patty"></div>
 				<div class="bottom-bun"></div>
-			</label>
+			</button>
 
 			<!-- kopjes voor de hamburger menu: staat nog op display:none; (met JS actief maken)-->
 			<ul>
@@ -88,38 +88,44 @@
 		<section class="newsfeed">
 			<ul>
 
-				<li id="overflow">
+				<li class="h2_ondermetomlijning">
+					<h2>12 maanden familielidmaatschap</h2>
+					<a href="nintendofamilie.html">
+						<img src="images/nsonline.png" alt="12 maanden familielidmaatschap" /></a>
+				</li>
+
+				<li class="h2_overflow">
 					<h2>Nu verkrijgbaar!</h2>
 					<a href="https://www.nintendo.nl/" target="_blank">
 						<img src="images/wario.jpeg" alt="Wario" /></a>
 				</li>
 
-				<li id="metgradient">
+				<li class="h2_metgradient">
 					<h2>OLED-Model</h2>
-					<a href="nintendofamilie.html" target="_blank">
+					<a href="nintendofamilie.html">
 						<img src="images/oled.png" alt="Nintendo OLED" /></a>
 				</li>
 
-				<li id="ondermetomlijning">
+				<li class="h2_ondermetomlijning">
 					<h2>Nu verkijgbaar!</h2>
 					<a href="https://www.nintendo.nl/" target="_blank">
 						<img src="images/dbz.png" alt="Dragon Ball Z Kakarot nu verkijgbaar" /></a>
 				</li>
 
-				<li id="onderenboven">
+				<li class="h2_onderenboven">
 					<h2>Binnenkort verkrijgbaar</h2>
 					<h2>Pokemon Legends</h2>
 					<a href="https://www.nintendo.nl/" target="_blank">
 						<img src="images/pokemon.png" alt="Pokemon Legends binnenkort verkijgbaar" /></a>
 				</li>
 
-				<li id="boven">
+				<li class="h2_boven">
 					<h2>Mariokart 8</h2>
 					<a href="https://www.nintendo.nl/" target="_blank">
 						<img src="images/mario.jpeg" alt="Mariokart 8" /></a>
 				</li>
 
-				<li id="onder">
+				<li class="h2_onder">
 					<h2>Dragon Quest VI</h2>
 					<a href="https://www.nintendo.nl/" target="_blank">
 						<img src="images/dragonquest.png" alt="Dragon Quest VI" /></a>
@@ -128,73 +134,128 @@
 			</ul>
 		</section>
 
-		<!-- Section voor latest news -->
-		<section class="latestnews">
-			<ul>
-
+		<!-- Section voor latest games -->
+		<section class="latestgames">
+			<h2>| Onlangs uitgekomen</h2>
+			<ol>
 				<li>
-					<h2>Titel</h2>
-					<p>Details</p>
-					<img src="" alt="" />
-					<a href=""></a>
+					<a href="https://www.nintendo.nl/Games/Nintendo-Switch-download-software/Pool-8-Ball-Billiards-2043204.html">
+						<img src="images/pool.png" alt="Pool: 8 Ball Billiards" /></a>
+					<section class "textlatestgames">
+						<h3>Pool: 8 Ball Billiards</h3>
+						<p>16-09-2021 | Nintendo Switch</p>
+						<p>Nintendo Switch-downloadsoftware</p>
+					</section>
 				</li>
 
 				<li>
-					<h2>Titel</h2>
-					<p>Details</p>
-					<img src="" alt="" />
-					<a href=""></a>
+					<a href="https://www.nintendo.nl/Games/Nintendo-Switch/Street-Outlaws-2-Winner-Takes-All-2033451.html">
+						<img src="images/street.png" alt="Street outlwas 2: Winner Takes All" /></a>
+					<section class "textlatestgames">
+						<h3>Street outlwas 2: Winner Takes All</h3>
+						<p>15-09-2021 | Nintendo Switch</p>
+						<p>Download versie (Nintendo Switch)</p>
+					</section>
 				</li>
 
 				<li>
-					<h2>Titel</h2>
-					<p>Details</p>
-					<img src="" alt="" />
-					<a href=""></a>
+					<a href="https://www.nintendo.nl/Games/Nintendo-Switch-download-software/Work-Trip-2042491.html">
+						<img src="images/worktrip.png" alt="Work Trip" /></a>
+					<section class "textlatestgames">
+						<h3>Work Trip</h3>
+						<p>14-09-2021 | Nintendo Switch</p>
+						<p>Nintendo Switch-downloadsoftware</p>
+					</section>
 				</li>
 
 				<li>
-					<h2>Titel</h2>
-					<p>Details</p>
-					<img src="" alt="" />
-					<a href=""></a>
+					<a
+						href="https://www.nintendo.nl/Games/Nintendo-Switch-download-software/Super-Arcade-Football-2041844.html">
+						<img src="images/superarcade.png" alt="Super Arcade Football" /></a>
+					<section class "textlatestgames">
+						<h3>Super Arcade Football</h3>
+						<p>13-09-2021 | Nintendo Switch</p>
+						<p>Nintendo Switch-downloadsoftware</p>
+					</section>
 				</li>
-			</ul>
+
+				<li>
+					<a
+						href="https://www.nintendo.nl/Games/Nintendo-Switch/WarioWare-Get-It-Together--1987424.html?c=demo">
+						<img src="images/wario.jpeg" alt="Wario Ware: Get It Together!" /></a>
+					<section class "textlatestgames">
+						<h3>Wario Ware: Get It Together!</h3>
+						<p>12-09-2021 | Nintendo Switch</p>
+						<p>Nintendo Switch-downloadsoftware</p>
+					</section>
+				</li>
+			</ol>
+			<a href="https://www.nintendo.nl/Zoeken/Zoeken-299117.html?f=147394-16-71">Meer games >></a>
 		</section>
 
 		<!-- Section voor de socialmedia iconen -->
 		<section class="socialmedia">
+			<h2>Delen op:</h2>
 			<ul>
 				<li>
-					<img src="" alt="" />
-					<a href=""></a>
+					<a href="https://www.facebook.com/Nintendo/">
+						<img src="images/facebook.png" alt="Facebook" /></a>
 				</li>
 
 				<li>
-					<img src="" alt="" />
-					<a href=""></a>
+					<a href="https://twitter.com/nintendonl?lang=en">
+						<img src="images/twitter.png" alt="Twitter" /> </a>
 				</li>
 
 				<li>
-					<img src="" alt="" />
-					<a href=""></a>
+					<a href="https://www.whatsapp.com/">
+						<img src="images/whatsapp.png" alt="Whatsapp" /></a>
 				</li>
 			</ul>
 		</section>
+
+
+
 	</main>
 
-
 	<footer>
-		<div class="headerfooter">
-			<h2> Dit is de footer</h2>
-		</div>
+		<section class="headerfooter">
+			<a href="index.html">
+				<img src="images/logo.png" alt="Home" /></a>
 
-		<ul>
-			<li><a href="#">Nintendo E-shop</a></li>
-			<li><a href="#">Nintendo Kids</a></li>
-			<li><a href="#">Ouders</a></li>
-			<li><a href="#">Support en Contact</a></li>
-		</ul>
+			<select name="language" class="language_select">
+				<option value="">Land: Nederland</option>
+				<option value="english">Verenige Staten</option>
+				<option value="spanish">Spanje</option>
+				<option value="french">Frankrijk</option>
+				<option value="korean">Korea</option>
+				<option value="japanese">Japan</option>
+				<option value="dutch">Nederland</option>
+			</select>
+
+
+
+
+		</section>
+
+		<section class="mainfooter">
+			<ul>
+				<li><a href="#">Nintendo E-shop</a></li>
+				<li><a href="#">Nintendo Kids</a></li>
+				<li><a href="#">Ouders</a></li>
+				<li><a href="#">Support en Contact</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#">Over het bedrijf</a></li>
+				<li><a href="#">Vacatures</a></li>
+				<li><a href="#">Privacybeleid van de website en de My Nintendo Store</a></li>
+				<li><a href="#">My Nintendo Store: Algemene verkoopvoorwaarden</a></li>
+				<li><a href="#">Cookie-instellingen</a></li>
+			</ul>
+
+		</section>
+
 	</footer>
 
 	<!-- om JS te koppelen-->

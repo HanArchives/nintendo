@@ -2,11 +2,13 @@
 /* CODE VOOR ALGEMEEN" */
 /***********************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box; 
+  margin: 0; 
+  padding: 0;
 }
 
 body {
-  font-family: 'avenir';
+  font-family: 'arial';
   position: relative;
 }
 
@@ -21,10 +23,11 @@ header{
 } 
 
 main {
-  background-color: white;
+  background-color:whitesmoke;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  
 }
 
 main ul {
@@ -41,13 +44,15 @@ h2{
 /* CODE VOOR ROOT" */
 /*******************/
 :root {
-  --background-color-nintendo-red: #e60012 ;
-  --accent-background-color:black;
+  --background-color-nintendo-red: #e60012;
+  --background-color-white: white;
+  --background-color:black;
   --secondary-background-color:rgba(0 0 0 / .75);
   --third-background-color:rgb(243, 243, 56);
 
   --accent-color:white;
   --secondary-color:black;
+  --third-color:#e60012 ;
 
   --shadow-color:rgba(0 0 0 / .5);
 }
@@ -137,24 +142,110 @@ nav ul:first-of-type {
   transition: all 0.3s ease-in-out;
 }
 
+nav button{
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+
 /********************/
 /* CODE VOOR FOOTER */
 /********************/
 Footer{
   background-color: #c40010 ;
+  width: 100%;
 }
 
-.headerfooter { 
-  background-color:var(--background-color-nintendo-red) ;
+/********************************************/
+/* CODE VOOR CLASS "headerfooter" in FOOTER */
+/********************************************/
+
+.headerfooter{
+  padding: 1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+
+  background-color:var(--background-color-nintendo-red);
+}
+
+footer img {
+  max-width: 4.5em;
+  height: auto;
 }
 
 
+label {
+  font-size: 1rem;
+  padding-right: 1em;
+}
+
+select {
+  padding: 2px 5px;
+  font-size: .9rem;
+
+  background-color:#c40010;
+  border-radius: .5em;
+  color: var(--accent-color);
+  border: none;
+}
+
+.language_select{
+  background-color:#c40010;
+  color: var(--accent-color);
+}
+
+/******************************************/
+/* CODE VOOR CLASS "mainfooter" in FOOTER */
+/******************************************/
+.mainfooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainfooter ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.mainfooter li{
+  padding: .5em;
+  list-style-type: none;
+}
+
+.mainfooter li:hover {
+  text-decoration: underline;
+}
+
+.mainfooter ul:first-of-type li a{
+  text-decoration: none;
+  color:var(--accent-color);
+  font-weight: bold;
+}
+
+.mainfooter ul:last-of-type li a{
+  text-decoration: none;
+  color:var(--accent-color);
+  font-size: small;
+}
+
+
+
+
+
+/* Code voor HOME ***********************************************/
 /******************************************/
 /* CODE VOOR SECTION MET class="newsfeed" */
 /******************************************/
 .newsfeed{
   top:0;
   margin:0.2em;
+  max-width: 100%;
 }
 
 .newsfeed li:hover {
@@ -172,8 +263,8 @@ Footer{
 }
 
 .newsfeed img{
-  width:100%;
-  border-radius: 1em;
+  max-width:100%;
+  border-radius: 0.5em;
 }
 
 .newsfeed li {
@@ -184,20 +275,19 @@ Footer{
   overflow: hidden;
 }
 
-/******************************************/
-/* CODE PER H2 IN SECTIOEN .newsfeed */
-/******************************************/
-/**********************************/
-/* CODE VOOR li MET id="overflow" */
-/**********************************/
+/************************************/
+/* CODE PER H2 IN SECTION .newsfeed */
+/************************************/
+/****************************************/
+/* CODE VOOR li MET class="h2_overflow" */
+/****************************************/
+/* meerdere woorden veranderen in hoofletter onderEnBoven */
 
-/* !!!!!!!!!!!! Namen nog aanpassen naar wat logisch klinkt en id naar class veranderen !!!!!!!!!!!!!! */
-
-#overflow {
+.h2_overflow {
   position:relative;
 }
 
-#overflow h2 {
+.h2_overflow h2 {
   position:absolute;
   left:17.5%;
   top: 0em;
@@ -205,7 +295,7 @@ Footer{
   width:60%;
   margin:0;
   padding:.5em;
-  transform:rotate(0deg);
+  /* transform:rotate(0deg); */
   
   background-color:var(--third-background-color);
   box-shadow:.25em .25em .25em var(--shadow-color);
@@ -222,20 +312,20 @@ Footer{
   overflow:hidden;
 }
 
-#overflow:hover h2 {
+.h2_overflow:hover h2 {
   /* Padding aan de bovenkant is groter bij hoveren */
   padding:2em .5em .5em;
 }
 
 
-/*******************************/
-/* CODE VOOR li MET id="boven" */
-/*******************************/
-#boven {
+/*************************************/
+/* CODE VOOR li MET class="h2_boven" */
+/*************************************/
+.h2_boven {
   position:relative;
 }
 
-#boven h2 {
+.h2_boven h2 {
   position:absolute;
   
   left:0;
@@ -245,19 +335,19 @@ Footer{
   margin:0;
   padding:.5em;
 
-  background-color:var(--accent-background-color);
+  background-color:var(--background-color);
   color:var(--accent-color);
-  border-radius: 1em 1em 0 0; 
+  border-radius: 0.5em 0.5em 0 0; 
 }
 
-/*******************************/
-/* CODE VOOR li MET id="onder" */
-/*******************************/
-#onder {
+/*************************************/
+/* CODE VOOR li MET class="h2_onder" */
+/*************************************/
+.h2_onder {
   position:relative;
 }
 
-#onder h2 {
+.h2_onder h2 {
   position:absolute;
 
   left:0;
@@ -271,18 +361,18 @@ Footer{
   text-align:center;
   background-color:var(--secondary-background-color);
   color:var(--accent-color);
-  border-radius: 0 0 1em 1em; 
+  border-radius: 0 0 0.5em 0.5em; 
 }
 
 
-/*******************************************/
-/* CODE VOOR li MET id="ondermetomlijning" */
-/*******************************************/
-#ondermetomlijning {
+/*************************************************/
+/* CODE VOOR li MET class="h2_ondermetomlijning" */
+/*************************************************/
+.h2_ondermetomlijning {
   position:relative;
 }
 
-#ondermetomlijning h2:first-of-type {
+.h2_ondermetomlijning h2:first-of-type {
   position:absolute;
 
   left:1em;
@@ -293,21 +383,21 @@ Footer{
   padding:.5em;
   
   text-transform: uppercase;
-  background-color:var(--accent-background-color);
+  background-color:var(--background-color);
   border:solid .25em var(--accent-color);
   text-align:center;
   color:var(--accent-color);
 }
 
 
-/***************************************************/
-/* CODE VOOR li MET id="ondermetomlijning + boven" */
-/***************************************************/
-#onderenboven {
+/*******************************************/
+/* CODE VOOR li MET class="h2.onderenboven"*/
+/*******************************************/
+.h2_onderenboven {
   position:relative;
 }
 
-#onderenboven h2:first-of-type {
+.h2_onderenboven h2:first-of-type {
   position:absolute;
 
   left:1em;
@@ -318,37 +408,37 @@ Footer{
   padding:.5em;
   
   text-transform: uppercase;
-  background-color:var(--accent-background-color);
+  background-color:var(--background-color);
   border:solid .25em var(--accent-color);
   text-align:center;
   color:var(--accent-color);
 }
 
-#onderenboven h2:last-of-type {
-    position:absolute;
-    left:0;
-    /* en 0 vanaf de rechterkant - dus volle breedte */
-    right:0;
-    top:0;
+.h2_onderenboven h2:last-of-type {
+  position:absolute;
+  left:0;
+  /* en 0 vanaf de rechterkant - dus volle breedte */
+  right:0;
+  top:0;
 
-    margin:0;
-    padding:.5em;
+  margin:0;
+  padding:.5em;
 
-    background-image:linear-gradient( rgba(0,0,0,1),rgba(0,0,0,1), rgba(0, 162, 255, .25) );
-    text-align:center;
-    color:var(--accent-color);
-    border-radius: 1em 1em 0 0;
+  background-image:linear-gradient( rgba(0,0,0,1),rgba(0,0,0,1), rgba(0, 162, 255, .25) );
+  text-align:center;
+  color:var(--accent-color);
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 
-/*************************************/
-/* CODE VOOR li MET id="metgradient" */
-/*************************************/
-#metgradient {
+/*******************************************/
+/* CODE VOOR li MET class="h2_metgradient" */
+/*******************************************/
+.h2_metgradient {
   position:relative;
 }
 
-#metgradient h2 {
+.h2_metgradient h2 {
   position:absolute;
 
   left:0;
@@ -365,6 +455,260 @@ Footer{
 
 
 
+/***********************************/
+/* CODE VOOR SECTION .latestgames */
+/***********************************/
+
+.latestgames{
+  max-width:100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.latestgames li {
+  margin: .25em;
+  padding: 0 .25em 0 .25em ;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+ 
+  list-style-type: none;
+  background-color:var(--background-color-white);
+}
+
+.latestgames img{
+  max-width:6em;
+  margin: .25em;
+
+  border-radius: .5em;
+}
+
+.latestgames .textlatestgames{
+  display: flex;
+  flex-direction: column;
+}
+
+.latestgames h2 {
+background-color:var(--background-color-white);
+
+margin-top: .5em;
+padding-left: .5em;
+width: 100%;
+font-size: 18px;
+}
+
+.latestgames h3 {
+  padding: .5em;
+  font-size: 16px;
+}
+
+.latestgames p {
+  font-size: 12px;
+  color: gray;
+  padding-left: .5em;
+}
+
+.latestgames a:last-of-type{
+  text-align:right;
+  text-decoration: none;
+
+  color: var(--third-color);
+  background-color:var(--background-color-white);
+
+  font-size: 18px;
+  font-weight: bold;
+}
 
 
+/**********************************/
+/* CODE VOOR SECTION .socialmedia */
+/**********************************/
+.socialmedia {
+  margin: 2em 0 2em 0;
+  padding: 1em;
+
+  background-color:var(--background-color);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialmedia h2{
+  text-transform: uppercase;
+  color:var(--accent-color);
+  font-size: 1.5em;
+}
+
+.socialmedia ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.socialmedia li {
+  list-style-type: none;
+}
+
+.socialmedia img {
+  margin: .25em;
+
+  max-width: 2.5em;
+  border-radius: .5em;
+}
+
+
+
+
+/* NINETDO FAMILIE PAGINA*****************************************/
+/*****************************/
+/* CODE VOOR SECTION nsmodels*/
+/*****************************/
+.nsmodels {
+  margin-top: .5em;
+
+  width: 100%;
+
+  background-color: var(--background-color-nintendo-red);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+ 
+}
+
+.nsmodels li {
+  list-style-type: none; 
+}
+
+.nsmodels img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nsmodels h2 {
+  color: var(--accent-color);
+  font-size: x-large;
+}
+
+.nsmodels p {
+  color:var(--accent-color);
+}
+
+.nsmodels button {
+margin-top:1em;
+margin-bottom: 5em;
+padding: .5em 4em .5em 4em;
+
+border: none;
+background-color: #c40010;
+color: var(--accent-color);
+font-weight: bold;
+font-size: small;
+}
+
+.nsmodels button:hover {
+  border-style:solid;
+}
+
+.nsmodels a{
+  text-decoration: none;
+}
+
+
+/****************************/
+/* CODE VOOR SECTION buttons*/
+/****************************/
+.buttons {
+  top: 0; 
+  background-color: var(--background-color-nintendo-red);
+  text-align: center;
+}
+
+.buttons button{
+margin:1em;
+padding: .5em 4em .5em 4em;
+
+width: 90%;
+height: 4em;
+
+border: solid 1px;
+background-color: var(--background-color-nintendo-red);
+color: var(--accent-color);
+font-size: large;
+}
+
+main button:hover {
+  background-color:#c40010; ;
+}
+
+
+/*****************************/
+/* CODE VOOR SECTION nsonline*/
+/*****************************/
+.nsonline{
+width:100%;
+margin-top: 1em;
+padding: 0 1em 1em 1em
+}
+
+.nsonline img {
+  width: 10em;
+  height: auto;
+  padding-right: 1em;
+  background-color: var(--background-color-nintendo-red);
+}
+
+
+/*****************************/
+/* CODE VOOR SECTION slider/
+/*****************************/
+.slider {
+  /*background-image:url('images/carousel1.jpeg'); */
+  margin:1em 0 1em 0;
+
+  width: 100%;
+  height: auto;
+ 
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+
+.slider ul{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.slider li{
+  list-style-type: none;
+}
+
+
+.slider img {
+  margin:2em 0 2em 0;
+
+  width: 10em;
+  height: auto;
+}
+
+
+
+
+/* NOTITIES
+
+
+media queries 
+ophoging, kan lezen of iemand darkmode aan heeft (bijv)
+mediaqueries, hamburger menu veranderen naar losse elementen
+@media (min-width: 48em) 
+
+*/
 
