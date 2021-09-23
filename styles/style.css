@@ -120,17 +120,15 @@ nav li:nth-of-type(1) img {
   height: auto;
 }
 
-nav ul:first-of-type {
-  display: none;
-}
 
 /* Hamburger */
 .hamburgermenu {
   margin: 1em;
 }
 
-.hamburgermenu div {
+.hamburgermenu span {
   position: relative;
+  display: block;
 
   width: 2em;
   height: 3px;
@@ -147,6 +145,71 @@ nav button{
   border: none;
   background: none;
 }
+
+/***********************************/
+/* CODE VOOR class .uitgeklapt_menu*/
+/***********************************/
+/*********************************/
+.uitgeklapt_menu {
+  background-color:var(--background-color-white);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding-top: 7em;
+  transform: translateY(-100%);
+  transition: 1s;
+}
+
+.uitgeklapt_menu.toonMenu {
+  transform: translateY(0);
+}
+
+.uitgeklapt_menu img{
+  width:3em;
+  height: auto;
+  padding: 1em .5em 1em .5em;
+}
+
+.uitgeklapt_menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.uitgeklapt_menu li {
+  list-style-type: none;
+  margin: .5em;
+  background-color: var(--background-color-nintendo-red);
+  border-radius: 4%;
+  width: 6em;
+  height: 7em;
+  text-align: center;
+}
+
+.h2_hamburger_menu {
+  position: relative;
+}
+
+.h2_hamburger_menu h2 {
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:0;
+
+  margin:0;
+  padding:1em;
+
+  text-align:center;
+  font-size: xx-small;
+  color:var(--accent-color);
+}
+/*********************************/
 
 
 /********************/
@@ -180,6 +243,10 @@ footer img {
 label {
   font-size: 1rem;
   padding-right: 1em;
+}
+
+.label_language_select {
+  display: none;
 }
 
 select {
@@ -233,9 +300,6 @@ select {
   color:var(--accent-color);
   font-size: small;
 }
-
-
-
 
 
 /* Code voor HOME ***********************************************/
@@ -479,6 +543,14 @@ select {
   background-color:var(--background-color-white);
 }
 
+.latestgames li a {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
 .latestgames img{
   max-width:6em;
   margin: .25em;
@@ -489,13 +561,14 @@ select {
 .latestgames .textlatestgames{
   display: flex;
   flex-direction: column;
+  
 }
 
 .latestgames h2 {
 background-color:var(--background-color-white);
 
 margin-top: .5em;
-padding-left: .5em;
+padding: .5em;
 width: 100%;
 font-size: 18px;
 }
@@ -511,7 +584,10 @@ font-size: 18px;
   padding-left: .5em;
 }
 
-.latestgames a:last-of-type{
+
+.meer_games_button {
+  padding: .5em;
+
   text-align:right;
   text-decoration: none;
 
@@ -520,7 +596,7 @@ font-size: 18px;
 
   font-size: 18px;
   font-weight: bold;
-}
+} 
 
 
 /**********************************/
@@ -584,6 +660,7 @@ font-size: 18px;
 
 .nsmodels li {
   list-style-type: none; 
+  overflow: hidden;
 }
 
 .nsmodels img {
@@ -597,23 +674,31 @@ font-size: 18px;
 }
 
 .nsmodels p {
-  color:var(--accent-color);
+color: var(--accent-color);
 }
 
-.nsmodels button {
+
+.nsmodels li p:last-of-type {
+margin: 0 auto;
+
 margin-top:1em;
 margin-bottom: 5em;
 padding: .5em 4em .5em 4em;
+width: 50%;
 
-border: none;
+border:#c40010 2px solid;
 background-color: #c40010;
 color: var(--accent-color);
 font-weight: bold;
 font-size: small;
 }
 
-.nsmodels button:hover {
-  border-style:solid;
+.nsmodels ul li:hover p:last-of-type {
+  border: white 2px solid;
+}
+
+.nsmodels ul li:hover img {
+  transform: scale(1.05);
 }
 
 .nsmodels a{
@@ -630,7 +715,7 @@ font-size: small;
   text-align: center;
 }
 
-.buttons button{
+.buttons p{
 margin:1em;
 padding: .5em 4em .5em 4em;
 
@@ -643,11 +728,14 @@ color: var(--accent-color);
 font-size: large;
 }
 
-main button:hover {
-  background-color:#c40010; ;
+.buttons p:hover {
+  background-color:#c40010; 
 }
 
-
+.buttons p a{
+  color: white;
+  text-decoration: none;
+}
 /*****************************/
 /* CODE VOOR SECTION nsonline*/
 /*****************************/
@@ -669,8 +757,9 @@ padding: 0 1em 1em 1em
 /* CODE VOOR SECTION slider/
 /*****************************/
 .slider {
-  /*background-image:url('images/carousel1.jpeg'); */
-  margin:1em 0 1em 0;
+  /* background-image:url('images/carousel1.jpeg'); */
+  margin: 1em 0 1em 0;
+  padding: 3em;
 
   width: 100%;
   height: auto;
@@ -684,6 +773,22 @@ padding: 0 1em 1em 1em
 .slider ul{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+
+  animation-name: infiniteslider;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes infiniteslider {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
 }
 
 
@@ -693,7 +798,7 @@ padding: 0 1em 1em 1em
 
 
 .slider img {
-  margin:2em 0 2em 0;
+  margin:0em .5em 0em .5em;
 
   width: 10em;
   height: auto;
@@ -709,6 +814,11 @@ media queries
 ophoging, kan lezen of iemand darkmode aan heeft (bijv)
 mediaqueries, hamburger menu veranderen naar losse elementen
 @media (min-width: 48em) 
+
+
+Vragen wat ik het beste kan doen vanaf iphone 5 wat betreft menu
+
+
 
 */
 

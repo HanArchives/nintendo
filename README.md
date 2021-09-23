@@ -19,11 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Han Ossef
 
 #### Je startniveau:
-Blauwe piste
+Blauwe piste/ Rode piste
 
 #### Je focus:
 Extra aandacht voor de surface laag
- 
 </details>
 
 
@@ -85,6 +84,8 @@ Nintendo familie
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Wat erg goed ging is het kiezen van een website en een begin maken. Helaas was veel weggezakt voor mij waardoor ik even opnieuw kennisclips heb moeten kijken voor verfrissing. 
+
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -99,8 +100,8 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- punt 1: 
+- punt 2: 
 - nog een punt
 - ...
 
@@ -117,6 +118,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Deze week heb ik veel gewerkt aan mijn website. Ik ben een stuk verder gekomen waardoor de basis er goed in zit. Nu ben ik bezig met animaties toevoegen wat ik nog wel lastig vind. 
 
 
 ### Agenda voor meeting
@@ -238,8 +241,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. bron 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select 
+2. bron 2: https://codepen.io/shooft/pen/mdwwqNz 
+3. bron 3: https://www.nintendo.nl/index.html
+4. bron 4: 
 
 </details>
