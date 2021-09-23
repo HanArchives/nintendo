@@ -3,7 +3,6 @@ var hetMenu = document.querySelector(".uitgeklapt_menu");
 
 deButton.addEventListener("click", toggleMenu);
 
-function toggleMenu(event) {
-  // deNav = event.target.parentNode;
+function toggleMenu() {
   hetMenu.classList.toggle('toonMenu');
 }

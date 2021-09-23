@@ -120,13 +120,18 @@ nav li:nth-of-type(1) img {
   height: auto;
 }
 
+nav button{
+  padding: 0;
+  border: none;
+  background: none;
+}
 
 /* Hamburger */
-.hamburgermenu {
+.hamburger_menu {
   margin: 1em;
 }
 
-.hamburgermenu span {
+.hamburger_menu span {
   position: relative;
   display: block;
 
@@ -137,29 +142,85 @@ nav li:nth-of-type(1) img {
 
   border-radius: 3px;
   background-color: white;
-  transition: all 0.3s ease-in-out;
+
 }
 
-nav button{
-  padding: 0;
-  border: none;
-  background: none;
+
+/*****NOG MEE BEZIG******/
+.top_bun{
+  animation-name:flipping-top-bun;
+  animation-duration:2s;
+  animation-iteration-count:1;
 }
+
+@keyframes flipping-top-bun {
+  0% {
+    transform: rotate(45deg) scale(1);
+   
+  }
+
+  100% {
+    transform: rotate(-45deg) scale(1.1) ;
+  }
+}
+
+.bottom_bun{
+  animation-name:flipping-bottom-bun;
+  animation-duration:2s;
+  animation-iteration-count:1;
+} 
+
+@keyframes flipping-bottom-bun {
+  0% {
+    transform: rotate(-45deg) scale(1);
+    
+  }
+  100% {
+    transform: rotate(45deg)  scale(1.1);
+  }
+}
+
+
+.patty{
+  animation-name:flipping-patty;
+  animation-duration:2s;
+  animation-iteration-count:1;
+}
+
+@keyframes flipping-patty {
+  0% {
+  opacity: 1;
+    
+  }
+
+  100% {
+    opacity: 0;
+  }
+} 
+
+/****************/
+
+
 
 /***********************************/
 /* CODE VOOR class .uitgeklapt_menu*/
 /***********************************/
 /*********************************/
 .uitgeklapt_menu {
-  background-color:var(--background-color-white);
-  width: 100%;
   position: fixed;
+
+  padding-top: 7em;
+  width: 100%;
+
   bottom: 0;
   right: 0;
   top: 0;
   left: 0;
+
   z-index: 5;
-  padding-top: 7em;
+ 
+  background: rgba(255, 255, 255, .95);
+
   transform: translateY(-100%);
   transition: 1s;
 }
@@ -169,7 +230,7 @@ nav button{
 }
 
 .uitgeklapt_menu img{
-  width:3em;
+  width:4em;
   height: auto;
   padding: 1em .5em 1em .5em;
 }
@@ -182,13 +243,15 @@ nav button{
 }
 
 .uitgeklapt_menu li {
-  list-style-type: none;
   margin: .5em;
-  background-color: var(--background-color-nintendo-red);
-  border-radius: 4%;
+
   width: 6em;
   height: 7em;
+
+  background-color: var(--background-color-nintendo-red);
+  border-radius: 4%;
   text-align: center;
+  list-style-type: none;
 }
 
 .h2_hamburger_menu {
@@ -221,10 +284,10 @@ Footer{
 }
 
 /********************************************/
-/* CODE VOOR CLASS "headerfooter" in FOOTER */
+/* CODE VOOR CLASS "header_footer" in FOOTER */
 /********************************************/
 
-.headerfooter{
+.header_footer{
   padding: 1em;
 
   display: flex;
@@ -238,7 +301,6 @@ footer img {
   max-width: 4.5em;
   height: auto;
 }
-
 
 label {
   font-size: 1rem;
@@ -265,54 +327,60 @@ select {
 }
 
 /******************************************/
-/* CODE VOOR CLASS "mainfooter" in FOOTER */
+/* CODE VOOR CLASS "main_footer" in FOOTER */
 /******************************************/
-.mainfooter {
+.main_footer {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.mainfooter ul {
+.main_footer ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.mainfooter li{
+.main_footer li{
   padding: .5em;
   list-style-type: none;
 }
 
-.mainfooter li:hover {
+.main_footer li:hover {
   text-decoration: underline;
 }
 
-.mainfooter ul:first-of-type li a{
+.main_footer ul:first-of-type li a{
   text-decoration: none;
   color:var(--accent-color);
   font-weight: bold;
 }
 
-.mainfooter ul:last-of-type li a{
+.main_footer ul:last-of-type li a{
   text-decoration: none;
   color:var(--accent-color);
   font-size: small;
 }
 
+.main_footer p{
+  color: var(--accent-color);
+  text-align: right;
+  padding: 1em;
+}
+
 
 /* Code voor HOME ***********************************************/
 /******************************************/
-/* CODE VOOR SECTION MET class="newsfeed" */
+/* CODE VOOR SECTION MET class="news_feed" */
 /******************************************/
-.newsfeed{
+.news_feed{
   top:0;
   margin:0.2em;
   max-width: 100%;
 }
 
-.newsfeed li:hover {
+.news_feed li:hover {
   top: -1em; 
 
   background-color:var(--secondary-background-color);
@@ -322,25 +390,25 @@ select {
   box-shadow: 0em .4em .4em black;
 }
 
-.newsfeed li:active {
+.news_feed li:active {
   box-shadow: none;
 }
 
-.newsfeed img{
+.news_feed img{
   max-width:100%;
   border-radius: 0.5em;
 }
 
-.newsfeed li {
+.news_feed li {
   list-style-type: none;
 }
 
-.newsfeed h2 {
+.news_feed h2 {
   overflow: hidden;
 }
 
 /************************************/
-/* CODE PER H2 IN SECTION .newsfeed */
+/* CODE PER H2 IN SECTION .news_feed */
 /************************************/
 /****************************************/
 /* CODE VOOR li MET class="h2_overflow" */
@@ -430,13 +498,13 @@ select {
 
 
 /*************************************************/
-/* CODE VOOR li MET class="h2_ondermetomlijning" */
+/* CODE VOOR li MET class="h2_onder_met_omlijning" */
 /*************************************************/
-.h2_ondermetomlijning {
+.h2_onder_met_omlijning {
   position:relative;
 }
 
-.h2_ondermetomlijning h2:first-of-type {
+.h2_onder_met_omlijning h2:first-of-type {
   position:absolute;
 
   left:1em;
@@ -457,11 +525,11 @@ select {
 /*******************************************/
 /* CODE VOOR li MET class="h2.onderenboven"*/
 /*******************************************/
-.h2_onderenboven {
+.h2_onder_en_boven {
   position:relative;
 }
 
-.h2_onderenboven h2:first-of-type {
+.h2_onder_en_boven h2:first-of-type {
   position:absolute;
 
   left:1em;
@@ -478,7 +546,7 @@ select {
   color:var(--accent-color);
 }
 
-.h2_onderenboven h2:last-of-type {
+.h2_onder_en_boven h2:last-of-type {
   position:absolute;
   left:0;
   /* en 0 vanaf de rechterkant - dus volle breedte */
@@ -520,10 +588,10 @@ select {
 
 
 /***********************************/
-/* CODE VOOR SECTION .latestgames */
+/* CODE VOOR SECTION .latest_games */
 /***********************************/
 
-.latestgames{
+.latest_games{
   max-width:100%;
 
   display: flex;
@@ -531,7 +599,7 @@ select {
   flex-direction: column;
 }
 
-.latestgames li {
+.latest_games li {
   margin: .25em;
   padding: 0 .25em 0 .25em ;
   width: 100%;
@@ -543,7 +611,7 @@ select {
   background-color:var(--background-color-white);
 }
 
-.latestgames li a {
+.latest_games li a {
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -551,20 +619,20 @@ select {
   color: black;
 }
 
-.latestgames img{
+.latest_games img{
   max-width:6em;
   margin: .25em;
 
   border-radius: .5em;
 }
 
-.latestgames .textlatestgames{
+.latest_games .text_latest_games{
   display: flex;
   flex-direction: column;
   
 }
 
-.latestgames h2 {
+.latest_games h2 {
 background-color:var(--background-color-white);
 
 margin-top: .5em;
@@ -573,12 +641,12 @@ width: 100%;
 font-size: 18px;
 }
 
-.latestgames h3 {
+.latest_games h3 {
   padding: .5em;
   font-size: 16px;
 }
 
-.latestgames p {
+.latest_games p {
   font-size: 12px;
   color: gray;
   padding-left: .5em;
@@ -600,13 +668,13 @@ font-size: 18px;
 
 
 /**********************************/
-/* CODE VOOR SECTION .socialmedia */
+/* CODE VOOR SECTION .social_media */
 /**********************************/
-.socialmedia {
+.social_media {
   margin: 2em 0 2em 0;
   padding: 1em;
 
-  background-color:var(--background-color);
+  background-color:rgb(66, 66, 66);
   width: 100%;
 
   display: flex;
@@ -614,23 +682,23 @@ font-size: 18px;
   align-items: center;
 }
 
-.socialmedia h2{
+.social_media h2{
   text-transform: uppercase;
   color:var(--accent-color);
   font-size: 1.5em;
 }
 
-.socialmedia ul {
+.social_media ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.socialmedia li {
+.social_media li {
   list-style-type: none;
 }
 
-.socialmedia img {
+.social_media img {
   margin: .25em;
 
   max-width: 2.5em;
@@ -642,9 +710,9 @@ font-size: 18px;
 
 /* NINETDO FAMILIE PAGINA*****************************************/
 /*****************************/
-/* CODE VOOR SECTION nsmodels*/
+/* CODE VOOR SECTION ns_models*/
 /*****************************/
-.nsmodels {
+.ns_models {
   margin-top: .5em;
 
   width: 100%;
@@ -658,27 +726,27 @@ font-size: 18px;
  
 }
 
-.nsmodels li {
+.ns_models li {
   list-style-type: none; 
   overflow: hidden;
 }
 
-.nsmodels img {
+.ns_models img {
   max-width: 100%;
   height: auto;
 }
 
-.nsmodels h2 {
+.ns_models h2 {
   color: var(--accent-color);
   font-size: x-large;
 }
 
-.nsmodels p {
+.ns_models p {
 color: var(--accent-color);
 }
 
 
-.nsmodels li p:last-of-type {
+.ns_models li p:last-of-type {
 margin: 0 auto;
 
 margin-top:1em;
@@ -693,15 +761,15 @@ font-weight: bold;
 font-size: small;
 }
 
-.nsmodels ul li:hover p:last-of-type {
+.ns_models ul li:hover p:last-of-type {
   border: white 2px solid;
 }
 
-.nsmodels ul li:hover img {
+.ns_models ul li:hover img {
   transform: scale(1.05);
 }
 
-.nsmodels a{
+.ns_models a{
   text-decoration: none;
 }
 
@@ -713,11 +781,12 @@ font-size: small;
   top: 0; 
   background-color: var(--background-color-nintendo-red);
   text-align: center;
+  width: 100%;
 }
 
 .buttons p{
 margin:1em;
-padding: .5em 4em .5em 4em;
+
 
 width: 90%;
 height: 4em;
@@ -726,6 +795,10 @@ border: solid 1px;
 background-color: var(--background-color-nintendo-red);
 color: var(--accent-color);
 font-size: large;
+
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .buttons p:hover {
@@ -737,18 +810,74 @@ font-size: large;
   text-decoration: none;
 }
 /*****************************/
-/* CODE VOOR SECTION nsonline*/
+/* CODE VOOR SECTION ns_online*/
 /*****************************/
-.nsonline{
+.ns_online{
 width:100%;
 margin-top: 1em;
-padding: 0 1em 1em 1em
+background-color: var(--background-color-white);
 }
 
-.nsonline img {
+.ns_online img {
   width: 10em;
   height: auto;
-  padding-right: 1em;
+}
+
+.ns_online a {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: black;
+}
+
+.ns_online a:first-of-type h2 {
+  margin: 1em 1em 0em 1em;
+  font-size: large;
+} 
+
+.ns_online a:first-of-type h2:first-letter {
+  color: var(--background-color-nintendo-red);
+  font-size: xx-large ;
+} 
+
+.ns_online a:last-of-type h2 {
+  margin: 1em 1em 0em 1em;
+  font-size: large;
+  color: orange;
+} 
+
+.ns_online a:last-of-type h2:first-letter {
+  font-size: xx-large ;
+} 
+
+
+.ns_online p{
+  margin: 1em 1em 1em 1em;
+}
+
+.ns_online_images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--background-color-nintendo-red);
+  width: 100%;
+  justify-content: space-around;
+}
+
+.ns_online a:first-of-type .ns_online_images {
+  background-color: var(--background-color-nintendo-red);
+} 
+
+.ns_online a:last-of-type .ns_online_images {
+  background-color: lightgray;
+} 
+
+.ns_online div {
+  width: .5em;
+  height: auto;
+  padding:1em;
   background-color: var(--background-color-nintendo-red);
 }
 
@@ -769,7 +898,6 @@ padding: 0 1em 1em 1em
   background-color: var(--background-color);
 }
 
-
 .slider ul{
   display: flex;
   flex-direction: row;
@@ -787,15 +915,13 @@ padding: 0 1em 1em 1em
   }
 
   to {
-    transform: translateX(200%);
+    transform: translateX(357%);
   }
 }
-
 
 .slider li{
   list-style-type: none;
 }
-
 
 .slider img {
   margin:0em .5em 0em .5em;
@@ -805,18 +931,17 @@ padding: 0 1em 1em 1em
 }
 
 
-
-
 /* NOTITIES
 
 
-media queries 
+- media queries 
 ophoging, kan lezen of iemand darkmode aan heeft (bijv)
 mediaqueries, hamburger menu veranderen naar losse elementen
 @media (min-width: 48em) 
 
-
-Vragen wat ik het beste kan doen vanaf iphone 5 wat betreft menu
+Vragen
+- Vragen wat ik het beste kan doen vanaf iphone 5 wat betreft menu
+- vragen over animated squeezed hmaburger menu
 
 
 
