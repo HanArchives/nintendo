@@ -85,7 +85,7 @@ Nintendo familie
 Wat erg goed ging is het kiezen van een website en een begin maken. Helaas was veel weggezakt voor mij waardoor ik even opnieuw kennisclips heb moeten kijken voor verfrissing. 
 
 <img src="images/startvanmijnwebsite.png" width="375px" alt="start van mijn website">
-<img src="images/menugelukt.png" width="375px" alt="start van mijn website">
+<img src="images/Menugelukt.png" width="375px" alt="start van mijn website">
 
 
 ### Feedback ronde: 1
