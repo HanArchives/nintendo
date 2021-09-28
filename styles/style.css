@@ -2,41 +2,40 @@
 /* CODE VOOR ALGEMEEN" */
 /***********************/
 *, *::after, *::before {
-  box-sizing:border-box; 
+  box-sizing: border-box; 
   margin: 0; 
   padding: 0;
 }
 
 body {
-  font-family: 'arial';
+  font-family: "Open Sans","Helvetica Neue",sans-serif;
   position: relative;
 }
 
-header{
+header {
   position: sticky;
 
-  top:0;
-  margin:0;
+  top: 0;
+  margin: 0;
 
   z-index: 10;
   width: 100%;
 } 
 
-main {
-  background-color:whitesmoke;
+body main {
+  background-color: var(--background-color-main);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  
+  justify-content: center;
 }
 
-main ul {
-  max-width:32em;
-  padding:0;
+body main ul {
+  padding: 0;
 }
 
-h2{
-  font-size: 16px;
+h2 {
+  font-size: medium;
 }
 
 
@@ -44,17 +43,38 @@ h2{
 /* CODE VOOR ROOT" */
 /*******************/
 :root {
-  --background-color-nintendo-red: #e60012;
-  --background-color-white: white;
+  --background-color-nintendo-red:#e60012;
+  --background-color-nintendo-dark-red:#c40010;
+  --background-color-white:white;
+  --background-color-main: whitesmoke;
   --background-color:black;
+  --background-color-black:black;
+  --background-color-lightgray:lightgray;
+
+  --background-color-white-opacity:rgba(255, 255, 255, .95);
   --secondary-background-color:rgba(0 0 0 / .75);
-  --third-background-color:rgb(243, 243, 56);
 
   --accent-color:white;
   --secondary-color:black;
-  --third-color:#e60012 ;
+  --third-color:#e60012;
+  --third-color-nintendo-red:#e60012;
+  --fourth-color-orange:orange;
+  --third-background-color:rgb(243, 243, 56);
 
   --shadow-color:rgba(0 0 0 / .5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-nintendo-red:rgb(53, 53, 53);        
+    --background-color-nintendo-dark-red:black;     
+    --background-color-white:rgb(209, 209, 209);
+    --background-color-main: black;
+    --background-color-black:white;
+    --background-color-white-opacity:rgba(0, 0, 0, 0.95);
+    --fourth-color-orange:rgb(124, 81, 0);
+    --background-color-lightgray:darkgray;
+  }
 }
 
 
@@ -72,25 +92,25 @@ nav {
 
 nav ul {
   /*Positie nav*/
-  top:0;
-  margin:0;
-  padding:.5em;
+  top: 0;
+  margin: 0;
+  padding: .5em;
   width: 100%;
 
   /* Punten weghalen*/
   list-style-type: none;
   
   /*flexbox*/
-  display:flex; 
+  display: flex; 
   align-items: center;
   flex-wrap: wrap;
   /*Ruimte tussen nav elementen*/
-  gap:1em; 
+  gap: 1em; 
 }
 
 nav a {
   /* Opmaak tekst*/
-  color: #FFF;  
+  color: white;  
   text-decoration: none;
   font-weight: bold;
   font-size:x-small;
@@ -98,7 +118,7 @@ nav a {
   /*flexbox*/
   display: flex;
   align-items: center;  
-  flex-direction:column; 
+  flex-direction: column; 
 }
 
 nav a:hover {
@@ -120,7 +140,11 @@ nav li:nth-of-type(1) img {
   height: auto;
 }
 
-nav button{
+nav ul li:nth-of-type(3){
+  display:none;
+}
+
+nav button {
   padding: 0;
   border: none;
   background: none;
@@ -129,28 +153,37 @@ nav button{
 /* Hamburger */
 .hamburger_menu {
   margin: 1em;
+  cursor: pointer;
+}
+
+.hamburger_menu:hover {
+  transform: .8s;
+  transform: translateY(-.5em);
 }
 
 .hamburger_menu span {
-  position: relative;
-  display: block;
+  margin-top: 4px; 
 
   width: 2em;
   height: 3px;
 
-  margin-top: 4px;
+  position: relative;
+  display: block;
 
   border-radius: 3px;
-  background-color: white;
+  background-color: var(--background-color-white);
+}
 
+.mushroom {
+  display: none;
 }
 
 
-/*****NOG MEE BEZIG******/
-.top_bun{
-  animation-name:flipping-top-bun;
-  animation-duration:2s;
-  animation-iteration-count:1;
+/*****NOG MEE BEZIG******
+.hamburger_menu span:nth-of-type(1) {
+  animation-name: flipping-top-bun;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 @keyframes flipping-top-bun {
@@ -164,10 +197,10 @@ nav button{
   }
 }
 
-.bottom_bun{
-  animation-name:flipping-bottom-bun;
-  animation-duration:2s;
-  animation-iteration-count:1;
+.hamburger_menu span:nth-of-type(3) {
+  animation-name: flipping-bottom-bun;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 } 
 
 @keyframes flipping-bottom-bun {
@@ -181,10 +214,10 @@ nav button{
 }
 
 
-.patty{
-  animation-name:flipping-patty;
-  animation-duration:2s;
-  animation-iteration-count:1;
+.hamburger_menu span:nth-of-type(2) {
+  animation-name: flipping-patty;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 @keyframes flipping-patty {
@@ -198,7 +231,7 @@ nav button{
   }
 } 
 
-/****************/
+*/
 
 
 
@@ -219,7 +252,7 @@ nav button{
 
   z-index: 5;
  
-  background: rgba(255, 255, 255, .95);
+  background: var(--background-color-white-opacity);
 
   transform: translateY(-100%);
   transition: 1s;
@@ -229,8 +262,8 @@ nav button{
   transform: translateY(0);
 }
 
-.uitgeklapt_menu img{
-  width:4em;
+.uitgeklapt_menu img {
+  width: 4em;
   height: auto;
   padding: 1em .5em 1em .5em;
 }
@@ -252,25 +285,23 @@ nav button{
   border-radius: 4%;
   text-align: center;
   list-style-type: none;
-}
-
-.h2_hamburger_menu {
   position: relative;
 }
 
-.h2_hamburger_menu h2 {
-  position:absolute;
 
-  left:0;
-  right:0;
-  bottom:0;
+.uitgeklapt_menu li h2 {
+  position: absolute;
 
-  margin:0;
-  padding:1em;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-  text-align:center;
+  margin: 0;
+  padding: 1em;
+
+  text-align: center;
   font-size: xx-small;
-  color:var(--accent-color);
+  color: var(--accent-color);
 }
 /*********************************/
 
@@ -278,23 +309,21 @@ nav button{
 /********************/
 /* CODE VOOR FOOTER */
 /********************/
-Footer{
-  background-color: #c40010 ;
+footer {
+  background-color: var(--background-color-nintendo-dark-red) ;
   width: 100%;
 }
 
-/********************************************/
-/* CODE VOOR CLASS "header_footer" in FOOTER */
-/********************************************/
 
-.header_footer{
+/* CODE VOOR HEADER IN FOOTER */
+.header_footer {
   padding: 1em;
 
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
 
-  background-color:var(--background-color-nintendo-red);
+  background-color: var(--background-color-nintendo-red);
 }
 
 footer img {
@@ -315,24 +344,23 @@ select {
   padding: 2px 5px;
   font-size: .9rem;
 
-  background-color:#c40010;
+  background-color: var(--background-color-nintendo-dark-red);
   border-radius: .5em;
   color: var(--accent-color);
   border: none;
 }
 
-.language_select{
-  background-color:#c40010;
+.language_select {
   color: var(--accent-color);
 }
 
-/******************************************/
-/* CODE VOOR CLASS "main_footer" in FOOTER */
-/******************************************/
+
+/* CODE VOOR MAIN IN FOOTER */
 .main_footer {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--background-color-nintendo-dark-red);
 }
 
 .main_footer ul {
@@ -342,7 +370,7 @@ select {
   flex-wrap: wrap;
 }
 
-.main_footer li{
+.main_footer li {
   padding: .5em;
   list-style-type: none;
 }
@@ -351,19 +379,19 @@ select {
   text-decoration: underline;
 }
 
-.main_footer ul:first-of-type li a{
+.main_footer ul:first-of-type li a {
   text-decoration: none;
-  color:var(--accent-color);
+  color: var(--accent-color);
   font-weight: bold;
 }
 
-.main_footer ul:last-of-type li a{
+.main_footer ul:last-of-type li a {
   text-decoration: none;
-  color:var(--accent-color);
+  color: var(--accent-color);
   font-size: small;
 }
 
-.main_footer p{
+.main_footer p {
   color: var(--accent-color);
   text-align: right;
   padding: 1em;
@@ -374,18 +402,19 @@ select {
 /******************************************/
 /* CODE VOOR SECTION MET class="news_feed" */
 /******************************************/
-.news_feed{
-  top:0;
-  margin:0.2em;
-  max-width: 100%;
+.news_feed {
+  top: 0;
+  margin: .2em;
 }
 
 .news_feed li:hover {
-  top: -1em; 
-
-  background-color:var(--secondary-background-color);
+  background: rgba(0,0,0, .5);
+  border-radius: .5em;
   color:var(--accent-color);
-  transition: 0.8s;
+
+  transition: .5s;
+  transform: translateY(-.5em);
+
   overflow: hidden; 
   box-shadow: 0em .4em .4em black;
 }
@@ -394,9 +423,9 @@ select {
   box-shadow: none;
 }
 
-.news_feed img{
-  max-width:100%;
-  border-radius: 0.5em;
+.news_feed img {
+  width: 100%;
+  border-radius: .5em;
 }
 
 .news_feed li {
@@ -407,192 +436,178 @@ select {
   overflow: hidden;
 }
 
-/************************************/
-/* CODE PER H2 IN SECTION .news_feed */
-/************************************/
-/****************************************/
-/* CODE VOOR li MET class="h2_overflow" */
-/****************************************/
-/* meerdere woorden veranderen in hoofletter onderEnBoven */
 
-.h2_overflow {
+/*************************************/
+/* CODE PER H2 IN SECTION .news_feed */
+/*************************************/
+/* CODE VOOR li MET h2_onder_met_omlijning */
+.news_feed li:nth-of-type(1),
+.news_feed li:nth-of-type(4) {
   position:relative;
 }
 
-.h2_overflow h2 {
+.news_feed li:nth-of-type(1) h2, 
+.news_feed li:nth-of-type(4) h2 {
   position:absolute;
-  left:17.5%;
-  top: 0em;
+
+  left:1em;
+  right:1em;
+  bottom:1em;
   
-  width:60%;
   margin:0;
   padding:.5em;
-  /* transform:rotate(0deg); */
   
-  background-color:var(--third-background-color);
-  box-shadow:.25em .25em .25em var(--shadow-color);
-  border-radius:0 0 0.5em 0.5em;
-  
+  text-transform: uppercase;
+  background-color:var(--background-color);
+  border:solid .25em var(--accent-color);
   text-align:center;
-  color:var(--secondary-color);
+  color:var(--accent-color);
+}
+
+
+/* CODE VOOR li MET h2_overflow */
+.news_feed li:nth-of-type(2) {
+  position:relative;
+}
+
+.news_feed li:nth-of-type(2) h2 {
+  position: absolute;
+  left: 18%;
+  top: 0em;
+  
+  width: 60%;
+  margin: 0;
+  padding: .5em;
+  
+  background-color: var(--third-background-color);
+  box-shadow: .25em .25em .25em var(--shadow-color);
+  border-radius: 0 0 .5em .5em;
+  
+  text-align: center;
+  color: var(--secondary-color);
 
   text-transform: uppercase;
   /* Tijd om naar de hover-state te veranderen */
-  transition:.5s;
+  transition: .5s;
 
   /* om wat uit het element steekt te verbergen */
-  overflow:hidden;
-}
-
-.h2_overflow:hover h2 {
-  /* Padding aan de bovenkant is groter bij hoveren */
-  padding:2em .5em .5em;
-}
-
-
-/*************************************/
-/* CODE VOOR li MET class="h2_boven" */
-/*************************************/
-.h2_boven {
-  position:relative;
-}
-
-.h2_boven h2 {
-  position:absolute;
-  
-  left:0;
-  right:0;
-  top:0;
-
-  margin:0;
-  padding:.5em;
-
-  background-color:var(--background-color);
-  color:var(--accent-color);
-  border-radius: 0.5em 0.5em 0 0; 
-}
-
-/*************************************/
-/* CODE VOOR li MET class="h2_onder" */
-/*************************************/
-.h2_onder {
-  position:relative;
-}
-
-.h2_onder h2 {
-  position:absolute;
-
-  left:0;
-  right:0;
-  bottom:0;
-
-  margin:0;
-  padding:.5em;
-
   overflow: hidden;
-  text-align:center;
-  background-color:var(--secondary-background-color);
-  color:var(--accent-color);
-  border-radius: 0 0 0.5em 0.5em; 
+}
+.news_feed li:nth-of-type(2):hover h2 {
+  /* Padding aan de bovenkant is groter bij hoveren */
+  padding: 2em .5em .5em;
 }
 
 
-/*************************************************/
-/* CODE VOOR li MET class="h2_onder_met_omlijning" */
-/*************************************************/
-.h2_onder_met_omlijning {
-  position:relative;
+/* CODE VOOR li MET h2_metgradient" */
+.news_feed li:nth-of-type(3) {
+  position: relative;
 }
 
-.h2_onder_met_omlijning h2:first-of-type {
-  position:absolute;
+.news_feed li:nth-of-type(3) h2 {
+  position: absolute;
 
-  left:1em;
-  right:1em;
-  bottom:1em;
-  
-  margin:0;
-  padding:.5em;
-  
-  text-transform: uppercase;
-  background-color:var(--background-color);
-  border:solid .25em var(--accent-color);
-  text-align:center;
-  color:var(--accent-color);
-}
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-
-/*******************************************/
-/* CODE VOOR li MET class="h2.onderenboven"*/
-/*******************************************/
-.h2_onder_en_boven {
-  position:relative;
-}
-
-.h2_onder_en_boven h2:first-of-type {
-  position:absolute;
-
-  left:1em;
-  right:1em;
-  bottom:1em;
-  
-  margin:0;
-  padding:.5em;
-  
-  text-transform: uppercase;
-  background-color:var(--background-color);
-  border:solid .25em var(--accent-color);
-  text-align:center;
-  color:var(--accent-color);
-}
-
-.h2_onder_en_boven h2:last-of-type {
-  position:absolute;
-  left:0;
-  /* en 0 vanaf de rechterkant - dus volle breedte */
-  right:0;
-  top:0;
-
-  margin:0;
-  padding:.5em;
-
-  background-image:linear-gradient( rgba(0,0,0,1),rgba(0,0,0,1), rgba(0, 162, 255, .25) );
-  text-align:center;
-  color:var(--accent-color);
-  border-radius: 0.5em 0.5em 0 0;
-}
-
-
-/*******************************************/
-/* CODE VOOR li MET class="h2_metgradient" */
-/*******************************************/
-.h2_metgradient {
-  position:relative;
-}
-
-.h2_metgradient h2 {
-  position:absolute;
-
-  left:0;
-  right:0;
-  bottom:0;
-
-  padding:.5em .5em .5em;
+  padding: .5em .5em .5em;
   
   /* van helemaal transparant zwart naar zwart */
-  background-image:linear-gradient( rgba(0,0,0,1),rgba(0,0,0,0) );
-  text-align:center;
-  color:var(--accent-color);
+  background-image: linear-gradient( rgba(0,0,0,1),rgba(0,0,0,0) );
+  text-align: center;
+  color: var(--accent-color);
 }
 
+
+/* CODE VOOR li MET h2.onderenboven */
+.news_feed li:nth-of-type(5) {
+  position: relative;
+}
+
+.news_feed li:nth-of-type(5) h2:first-of-type {
+  position: absolute;
+
+  left: 1em;
+  right: 1em;
+  bottom: 1em;
+  
+  margin: 0;
+  padding: .5em;
+  
+  text-transform: uppercase;
+  background-color: var(--background-color);
+  border: solid .25em var(--accent-color);
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.news_feed li:nth-of-type(5) h2:last-of-type {
+  position: absolute;
+  left: 0;
+  /* en 0 vanaf de rechterkant - dus volle breedte */
+  right: 0;
+  top: 0;
+
+  margin: 0;
+  padding: .5em;
+
+  background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1), rgba(0, 162, 255, .25));
+  text-align: center;
+  color: var(--accent-color);
+  border-radius: .5em .5em 0 0;
+}
+
+
+/* CODE VOOR li MET h2_boven */
+.news_feed li:nth-of-type(6) {
+  position: relative;
+}
+
+.news_feed li:nth-of-type(6) h2 {
+  position: absolute;
+  
+  left: 0;
+  right: 0;
+  top: 0;
+
+  margin: 0;
+  padding: .5em;
+
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border-radius: .5em .5em 0 0; 
+}
+
+
+/* CODE VOOR li MET h2_onder */
+.news_feed li:nth-of-type(7) {
+  position: relative;
+}
+
+.news_feed li:nth-of-type(7) h2 {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 0;
+  padding: .5em;
+
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+  color: var(--accent-color);
+  border-radius: 0 0 0.5em 0.5em; 
+}
 
 
 /***********************************/
 /* CODE VOOR SECTION .latest_games */
 /***********************************/
-
-.latest_games{
-  max-width:100%;
+.latest_games {
+  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
@@ -602,11 +617,7 @@ select {
 .latest_games li {
   margin: .25em;
   padding: 0 .25em 0 .25em ;
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
- 
+  width: 100%; 
   list-style-type: none;
   background-color:var(--background-color-white);
 }
@@ -615,52 +626,57 @@ select {
   display: flex;
   flex-direction: row;
   text-align: left;
+
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
 }
 
-.latest_games img{
-  max-width:6em;
+.latest_games img {
+  max-width: 6em;
   margin: .25em;
 
   border-radius: .5em;
 }
 
-.latest_games .text_latest_games{
+.latest_games h2 {
+  background-color:var(--background-color-white);
+  
+  margin-top: .5em;
+  padding: .5em;
+  width: 100%;
+  font-size: 18px;
+  }
+
+  .latest_games li:hover a h2 {
+    text-decoration: underline;
+    }
+
+.latest_games section{
   display: flex;
   flex-direction: column;
-  
 }
 
-.latest_games h2 {
-background-color:var(--background-color-white);
-
-margin-top: .5em;
-padding: .5em;
-width: 100%;
-font-size: 18px;
-}
-
-.latest_games h3 {
+.latest_games section h2 {
   padding: .5em;
   font-size: 16px;
 }
 
 .latest_games p {
+  padding-left: .5em;
+
   font-size: 12px;
   color: gray;
-  padding-left: .5em;
 }
 
 
 .meer_games_button {
   padding: .5em;
 
-  text-align:right;
+  text-align: right;
   text-decoration: none;
 
   color: var(--third-color);
-  background-color:var(--background-color-white);
+  background-color: var(--background-color-white);
 
   font-size: 18px;
   font-weight: bold;
@@ -674,7 +690,7 @@ font-size: 18px;
   margin: 2em 0 2em 0;
   padding: 1em;
 
-  background-color:rgb(66, 66, 66);
+  background-color: rgb(66, 66, 66);
   width: 100%;
 
   display: flex;
@@ -684,7 +700,7 @@ font-size: 18px;
 
 .social_media h2{
   text-transform: uppercase;
-  color:var(--accent-color);
+  color: var(--accent-color);
   font-size: 1.5em;
 }
 
@@ -706,24 +722,21 @@ font-size: 18px;
 }
 
 
-
-
 /* NINETDO FAMILIE PAGINA*****************************************/
 /*****************************/
 /* CODE VOOR SECTION ns_models*/
 /*****************************/
 .ns_models {
-  margin-top: .5em;
+  margin-top: .2em;
 
   width: 100%;
 
-  background-color: var(--background-color-nintendo-red);
+  background-color: #e60012;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:center;
- 
+  text-align: center;
 }
 
 .ns_models li {
@@ -749,13 +762,13 @@ color: var(--accent-color);
 .ns_models li p:last-of-type {
 margin: 0 auto;
 
-margin-top:1em;
+margin-top: 1em;
 margin-bottom: 5em;
 padding: .5em 4em .5em 4em;
 width: 50%;
 
-border:#c40010 2px solid;
-background-color: #c40010;
+border: #c40010 2px solid;
+background-color: var(--background-color-nintendo-dark-red);
 color: var(--accent-color);
 font-weight: bold;
 font-size: small;
@@ -769,7 +782,7 @@ font-size: small;
   transform: scale(1.05);
 }
 
-.ns_models a{
+.ns_models a {
   text-decoration: none;
 }
 
@@ -778,17 +791,21 @@ font-size: small;
 /* CODE VOOR SECTION buttons*/
 /****************************/
 .buttons {
-  top: 0; 
-  background-color: var(--background-color-nintendo-red);
-  text-align: center;
   width: 100%;
+
+  background-color: var(--background-color-nintendo-red);
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.buttons p{
-margin:1em;
+.buttons p {
+margin: 1em;
+padding: 1em;
 
-
-width: 90%;
+width: 20em;
 height: 4em;
 
 border: solid 1px;
@@ -796,24 +813,22 @@ background-color: var(--background-color-nintendo-red);
 color: var(--accent-color);
 font-size: large;
 
-display: flex;
-align-items: center;
-justify-content: center;
+text-align: center;
 }
 
 .buttons p:hover {
-  background-color:#c40010; 
+  background-color: var(--background-color-nintendo-dark-red); 
 }
 
-.buttons p a{
-  color: white;
+.buttons p a {
+  color: var(--accent-color);
   text-decoration: none;
 }
 /*****************************/
 /* CODE VOOR SECTION ns_online*/
 /*****************************/
-.ns_online{
-width:100%;
+.ns_online {
+width: 100%;
 margin-top: 1em;
 background-color: var(--background-color-white);
 }
@@ -828,7 +843,7 @@ background-color: var(--background-color-white);
   flex-direction: column;
   flex-wrap: wrap;
   text-decoration: none;
-  color: black;
+  color:var(--secondary-color);
 }
 
 .ns_online a:first-of-type h2 {
@@ -844,19 +859,19 @@ background-color: var(--background-color-white);
 .ns_online a:last-of-type h2 {
   margin: 1em 1em 0em 1em;
   font-size: large;
-  color: orange;
+  color: var(--fourth-color-orange);
 } 
 
 .ns_online a:last-of-type h2:first-letter {
-  font-size: xx-large ;
+  font-size: xx-large;
 } 
 
 
-.ns_online p{
+.ns_online p {
   margin: 1em 1em 1em 1em;
 }
 
-.ns_online_images{
+.ns_online section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -866,25 +881,25 @@ background-color: var(--background-color-white);
   justify-content: space-around;
 }
 
-.ns_online a:first-of-type .ns_online_images {
+.ns_online a:first-of-type section {
   background-color: var(--background-color-nintendo-red);
 } 
 
-.ns_online a:last-of-type .ns_online_images {
-  background-color: lightgray;
+.ns_online a:last-of-type section {
+  background-color: var(--background-color-lightgray);
 } 
 
 .ns_online div {
   width: .5em;
   height: auto;
-  padding:1em;
+  padding: 1em;
   background-color: var(--background-color-nintendo-red);
 }
 
 
-/*****************************/
-/* CODE VOOR SECTION slider/
-/*****************************/
+/***************************/
+/* CODE VOOR SECTION slider*/
+/***************************/
 .slider {
   /* background-image:url('images/carousel1.jpeg'); */
   margin: 1em 0 1em 0;
@@ -898,7 +913,7 @@ background-color: var(--background-color-white);
   background-color: var(--background-color);
 }
 
-.slider ul{
+.slider ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -919,31 +934,155 @@ background-color: var(--background-color-white);
   }
 }
 
-.slider li{
+.slider li {
   list-style-type: none;
 }
 
 .slider img {
-  margin:0em .5em 0em .5em;
+  margin: 0em .5em 0em .5em;
 
   width: 10em;
   height: auto;
 }
 
 
-/* NOTITIES
-
-
-- media queries 
-ophoging, kan lezen of iemand darkmode aan heeft (bijv)
-mediaqueries, hamburger menu veranderen naar losse elementen
-@media (min-width: 48em) 
-
-Vragen
-- Vragen wat ik het beste kan doen vanaf iphone 5 wat betreft menu
-- vragen over animated squeezed hmaburger menu
 
 
 
-*/
+/* RESPONSIVE */
+@media (min-width: 48em) {
 
+  /*winkelwagen komt te voorschijn*/
+    nav ul li:nth-of-type(3){
+      display:block;
+    }
+
+  /* hamburgermenu verdwtijnt */
+    nav button {
+      display: none;
+    }
+
+/* menu komt te voorschijn in de main */
+    .uitgeklapt_menu {
+      padding-top: 5em;
+      width: 7%;
+      height: auto;
+      background: none;
+    
+      transform: translateY(0);
+      background-color: var(--background-color-nintendo-dark-red);
+    }
+
+    .uitgeklapt_menu ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .uitgeklapt_menu li {
+      margin:0;
+    
+      width: 6em;
+      height: 7em;
+    
+      background-color: var(--background-color-nintendo-red);
+      border-radius: 4%;
+      border:solid var(--background-color-nintendo-dark-red);
+      text-align: center;
+      list-style-type: none;
+      position: relative;
+    }
+
+    .uitgeklapt_menu li:hover {
+      background-color:#c40010 ;
+    }
+
+    /* menu opties die niet te zien zijn op een groterscherm */
+    .uitgeklapt_menu li:nth-of-type(6), 
+    .uitgeklapt_menu li:nth-of-type(7),
+    .uitgeklapt_menu li:nth-of-type(8){
+      display: none;
+    }  
+
+    /* main en footer schuiven iets naar rechts*/
+    main, footer{
+      padding-left:6em ;
+    }  
+
+    /* Slider mag langzamer gaan voor overloop*/
+    @keyframes infiniteslider {
+      from {
+        transform: translateX(0%);
+      }
+    
+      to {
+        transform: translateX(85%);
+      }
+    }
+
+}
+
+
+
+
+
+@media (min-width: 72em) {
+
+  /* Muchroom animati in de nav*/
+    .mushroom {
+      display: block;
+      animation-name: mushroom;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes mushroom {
+      from {
+        transform: translateX(0%) scale(0);
+      }
+    
+      to {
+        transform: translateX(2400%) scale(1.3);
+      }
+    }
+
+    /* NS models in een row rij (tweede-pagina)*/
+    .ns_models ul {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    
+    /* Buttons in een row rij (tweede-pagina)*/
+    .buttons {
+      width: 100%;
+      
+      background-color: var(--background-color-nintendo-red);
+        
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+     justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+    
+    /* news feed smaller gemaakt, zodat het smaller oogt */
+    .news_feed {
+      width: 40em;
+      border-radius: .5em;
+    }
+
+     /* Slider mag langzamer gaan voor overloop*/
+     @keyframes infiniteslider {
+      from {
+        transform: translateX(0%);
+      }
+    
+      to {
+        transform: translateX(20%);
+      }
+    }
+
+
+}

@@ -67,7 +67,7 @@ Nintendo familie
 ### dynamisch deel: Menu
 <img src="images/break3.png" width="375px" alt="breakdown van een dynamisch deel">
 
-### wellicht nog een dynamisch deel carousel: 
+### wellicht nog een dynamisch deel slider: 
 <img src="images/break4.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
@@ -82,28 +82,19 @@ Nintendo familie
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 Wat erg goed ging is het kiezen van een website en een begin maken. Helaas was veel weggezakt voor mij waardoor ik even opnieuw kennisclips heb moeten kijken voor verfrissing. 
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+<img src="images/startvanmijnwebsite.png" width="375px" alt="start van mijn website">
+<img src="images/menugelukt.png" width="375px" alt="start van mijn website">
 
 
-### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+### Feedback ronde: 1
+Uitkomst feedback 
 
-- punt 1: 
-- punt 2: 
-- nog een punt
-- ...
+- punt 1: Ik heb te veel classes met namen die niet duidelijk zijn. 
+- punt 2: Ik heb divs die ik beter kan vervangen
+- punt 3: Nette code en maak goed gebruik van notities
+
 
 </details>
 
@@ -117,28 +108,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Deze week heb ik veel gewerkt aan mijn website. Ik ben een stuk verder gekomen waardoor de basis er goed in zit voor beide pagina's. Nu ben ik bezig met animaties toevoegen wat ik nog wel lastig vind, zoals bij de slider. Ik vind dit erg leuk en blijf sleutelen tot iets lukt. 
+<img src="images/latestgames.png" width="375px" alt="latest games">
+<img src="images/slider.png" width="375px" alt="">
 
-Deze week heb ik veel gewerkt aan mijn website. Ik ben een stuk verder gekomen waardoor de basis er goed in zit. Nu ben ik bezig met animaties toevoegen wat ik nog wel lastig vind. 
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
-### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+### Feedback rond: 2 
+- Te veel classes
+- Hamburger menu met transistion laten bewegen en niet met animeren. 
+- Hamburger menu moet een cursor pointer krijgen
+- Plaatjes in de newsfeed kunnen beter met transition naar boven komen dan met top:-1;
+- Opschonen van code 
 
 </details>
 
@@ -189,20 +168,16 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Deze week ben ik echt bezig met responsive maken en darkmode. Ik probeer nog meer animaties toe te voegen omdat ik het leuk vind. Ook wil ik al mijn code weer langs om het nog netter te maken en om te kijken of ik overbodige code heb die niet nodig is. 
+
+<img src="images/darkmode.png" width="375px" alt="dark mode">
+<img src="images/lightmode.png" width="375px" alt="light mode">
 
 
-### Agenda voor meeting
-samen met je groepje opstellen
+<img src="images/bezigmetresponsive.png" width="375px" alt="48EM Responsive">
+<img src="images/bezigmetresponsive2.png" width="375px" alt="72EM Responsive">
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
-### Verslag van meeting
+### Feedback ronde: 3
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - punt 1
@@ -244,6 +219,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 1. bron 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select 
 2. bron 2: https://codepen.io/shooft/pen/mdwwqNz 
 3. bron 3: https://www.nintendo.nl/index.html
-4. bron 4: 
-
+4. bron 4: https://www.nintendo.nl/Nintendo-Switch-familie/Nintendo-Switch-familie-1618251.html
+5. bron 5: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+6. bron 6: 
 </details>
