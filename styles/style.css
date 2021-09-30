@@ -1142,6 +1142,10 @@ select {
 
 
 /* Vragen */
-/* Mag een section in een section bij latest games, 
+/* - Mag een section in een section bij latest games, 
 of moet het vervangen worden door een div door styling*/
-/* Hulp nodig met hamburger-menu animatie */
+
+/* - Hulp nodig met hamburger-menu animatie, en ook dat het bij een 
+groterscherm mee gaat in height, schaalt nu niet mee */
+
+/* To do: Bevindingen uit test verwerken */

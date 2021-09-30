@@ -173,14 +173,14 @@ Door te tabben skipt het opties
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-Deze week ben ik echt bezig met responsive maken en darkmode. Ik probeer nog meer animaties toe te voegen omdat ik het leuk vind. Ook wil ik al mijn code weer langs om het nog netter te maken en om te kijken of ik overbodige code heb die niet nodig is. 
+Deze week ben ik echt bezig met responsive maken en darkmode. Ik probeer nog meer animaties toe te voegen omdat ik het leuk vind. Ook wil ik al mijn code weer langs om het nog netter te maken en om te kijken of ik overbodige code heb die niet nodig is. Ook ben ik bezig geweest met grid op mijn index.html op section news_feed!
 
 <img src="images/darkmode.png" width="375px" alt="dark mode">
 <img src="images/lightmode.png" width="375px" alt="light mode">
 
-
 <img src="images/bezigmetresponsive.png" width="375px" alt="48EM Responsive">
 <img src="images/bezigmetresponsive2.png" width="375px" alt="72EM Responsive">
+<img src="images/grid.png" width="375px" alt="grid">
 
 ### Feedback ronde: 3
 hier na afloop snel de uitkomsten van de meeting vastleggen
