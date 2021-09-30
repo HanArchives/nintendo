@@ -782,6 +782,10 @@ select {
   font-size: small;
 }
 
+.ns_models li:nth-of-type(3){
+  display:none;
+}
+
 .ns_models ul li:hover p:last-of-type {
   border: white 2px solid;
 }
@@ -1136,6 +1140,16 @@ select {
       flex-direction: row;
     }
 
+
+    /* eerste list item gaat naar het midden */
+    .ns_models li:nth-of-type(3){
+      display:block;
+    }
+
+    .ns_models li:nth-of-type(1){
+      display:none;
+    }
+
 }
 
 
@@ -1149,3 +1163,4 @@ of moet het vervangen worden door een div door styling*/
 groterscherm mee gaat in height, schaalt nu niet mee */
 
 /* To do: Bevindingen uit test verwerken */
+/* Tweede pagina bij ns models en ns online nog even mooier maken*/ 
