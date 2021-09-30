@@ -221,10 +221,10 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select 
-2. bron 2: https://codepen.io/shooft/pen/mdwwqNz 
-3. bron 3: https://www.nintendo.nl/index.html
-4. bron 4: https://www.nintendo.nl/Nintendo-Switch-familie/Nintendo-Switch-familie-1618251.html
-5. bron 5: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
-6. bron 6: 
+1. bron 1 dropdown: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select 
+2. bron 2 voor positioneren van h2's op een afbeelding: https://codepen.io/shooft/pen/mdwwqNz 
+3. bron 3 alle content: https://www.nintendo.nl/index.html
+4. bron 4 alle content: https://www.nintendo.nl/Nintendo-Switch-familie/Nintendo-Switch-familie-1618251.html
+5. bron 5 slider animatie: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+6. bron 6 voor grid: https://www.youtube.com/watch?v=br-0i3U1VCA
 </details>
