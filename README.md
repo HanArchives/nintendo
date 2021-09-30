@@ -85,7 +85,7 @@ Nintendo familie
 Wat erg goed ging is het kiezen van een website en een begin maken. Helaas was veel weggezakt voor mij waardoor ik even opnieuw kennisclips heb moeten kijken voor verfrissing. 
 
 <img src="images/startvanmijnwebsite.png" width="375px" alt="start van mijn website">
-<img src="images/Menugelukt.png" width="375px" alt="start van mijn website">
+<img src="images/Menugelukt.png" width="375px" alt="menu gelukt">
 
 
 ### Feedback ronde: 1
@@ -118,6 +118,7 @@ Deze week heb ik veel gewerkt aan mijn website. Ik ben een stuk verder gekomen w
 - Hamburger menu moet een cursor pointer krijgen
 - Plaatjes in de newsfeed kunnen beter met transition naar boven komen dan met top:-1;
 - Opschonen van code 
+- Mijn naam zetten bij author
 
 </details>
 
@@ -134,27 +135,31 @@ Deze week heb ik veel gewerkt aan mijn website. Ik ben een stuk verder gekomen w
 Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Glaucoma/rp:
+Letters in de hamburger menu zijn niet te lezen, die moeten groter. 
 
 
 #### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Glaucoma/rp:
+P in onlangs uitgekomen niet te lezen, dus moet groter
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
 #### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Glaucoma/rp:
+Je kan in onlangs uitgekomen niet zien dat het een button is, misschien een state toevoegen i.p.v. alleen underline. 
 
 
 #### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Blur: 
+Het is zo wazig dat niks te lezen is. Contrast is wel goed te zien maar hierbij is voice-over geadviseert. Met voice-over word alles goed uitgelegd. Ik heb alleen geen automatische afspeel functie. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Mijn website word in het engels voorgelezen omdat mijn bestand  op Engels staat en die moet ik veranderen in het Nederlands
+
+
+Bevindingen op de nintendo.nl website:
+De home knop heeft unlabbeld image
+Door te tabben skipt het opties
 
 </details>
 

@@ -22,15 +22,18 @@ header {
   width: 100%;
 } 
 
-body main {
+main {
+  width: 100%;
+
   background-color: var(--background-color-main);
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
-body main ul {
+main ul {
   padding: 0;
 }
 
@@ -157,7 +160,6 @@ nav button {
 }
 
 .hamburger_menu:hover {
-  transform: .8s;
   transform: translateY(-.5em);
 }
 
@@ -251,7 +253,7 @@ nav button {
   left: 0;
 
   z-index: 5;
- 
+
   background: var(--background-color-white-opacity);
 
   transform: translateY(-100%);
@@ -358,6 +360,7 @@ select {
 /* CODE VOOR MAIN IN FOOTER */
 .main_footer {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   background-color: var(--background-color-nintendo-dark-red);
@@ -521,11 +524,11 @@ select {
 
 
 /* CODE VOOR li MET h2.onderenboven */
-.news_feed li:nth-of-type(5) {
+.news_feed li:nth-of-type(7) {
   position: relative;
 }
 
-.news_feed li:nth-of-type(5) h2:first-of-type {
+.news_feed li:nth-of-type(7) h2:first-of-type {
   position: absolute;
 
   left: 1em;
@@ -542,7 +545,7 @@ select {
   color: var(--accent-color);
 }
 
-.news_feed li:nth-of-type(5) h2:last-of-type {
+.news_feed li:nth-of-type(7) h2:last-of-type {
   position: absolute;
   left: 0;
   /* en 0 vanaf de rechterkant - dus volle breedte */
@@ -581,11 +584,11 @@ select {
 
 
 /* CODE VOOR li MET h2_onder */
-.news_feed li:nth-of-type(7) {
+.news_feed li:nth-of-type(5) {
   position: relative;
 }
 
-.news_feed li:nth-of-type(7) h2 {
+.news_feed li:nth-of-type(5) h2 {
   position: absolute;
 
   left: 0;
@@ -606,6 +609,9 @@ select {
 /***********************************/
 /* CODE VOOR SECTION .latest_games */
 /***********************************/
+/***********************************/
+/* CODE VOOR SECTION .latest_games */
+/***********************************/
 .latest_games {
   width: 100%;
 
@@ -617,7 +623,7 @@ select {
 .latest_games li {
   margin: .25em;
   padding: 0 .25em 0 .25em ;
-  width: 100%; 
+  
   list-style-type: none;
   background-color:var(--background-color-white);
 }
@@ -640,10 +646,11 @@ select {
 
 .latest_games h2 {
   background-color:var(--background-color-white);
-  
+  margin-left: .20em;
+  margin-right: .25em;
   margin-top: .5em;
   padding: .5em;
-  width: 100%;
+  
   font-size: 18px;
   }
 
@@ -662,15 +669,17 @@ select {
 }
 
 .latest_games p {
-  padding-left: .5em;
+  padding-left: 1em;
 
   font-size: 12px;
   color: gray;
 }
 
 
-.meer_games_button {
+.latest_games a{
   padding: .5em;
+  margin-left: .20em;
+  margin-right: .25em;
 
   text-align: right;
   text-decoration: none;
@@ -681,7 +690,6 @@ select {
   font-size: 18px;
   font-weight: bold;
 } 
-
 
 /**********************************/
 /* CODE VOOR SECTION .social_media */
@@ -755,23 +763,23 @@ select {
 }
 
 .ns_models p {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 
 .ns_models li p:last-of-type {
-margin: 0 auto;
+  margin: 0 auto;
 
-margin-top: 1em;
-margin-bottom: 5em;
-padding: .5em 4em .5em 4em;
-width: 50%;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  padding: .5em 4em .5em 4em;
+  width: 50%;
 
-border: #c40010 2px solid;
-background-color: var(--background-color-nintendo-dark-red);
-color: var(--accent-color);
-font-weight: bold;
-font-size: small;
+  border: #c40010 2px solid;
+  background-color: var(--background-color-nintendo-dark-red);
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: small;
 }
 
 .ns_models ul li:hover p:last-of-type {
@@ -802,18 +810,18 @@ font-size: small;
 }
 
 .buttons p {
-margin: 1em;
-padding: 1em;
+  margin: 1em;
+  padding: 1em;
 
-width: 20em;
-height: 4em;
+  width: 20em;
+  height: 4em;
 
-border: solid 1px;
-background-color: var(--background-color-nintendo-red);
-color: var(--accent-color);
-font-size: large;
+  border: solid 1px;
+  background-color: var(--background-color-nintendo-red);
+  color: var(--accent-color);
+  font-size: large;
 
-text-align: center;
+  text-align: center;
 }
 
 .buttons p:hover {
@@ -828,9 +836,9 @@ text-align: center;
 /* CODE VOOR SECTION ns_online*/
 /*****************************/
 .ns_online {
-width: 100%;
-margin-top: 1em;
-background-color: var(--background-color-white);
+  width: 100%;
+  margin-top: 1em;
+  background-color: var(--background-color-white);
 }
 
 .ns_online img {
@@ -842,6 +850,7 @@ background-color: var(--background-color-white);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   text-decoration: none;
   color:var(--secondary-color);
 }
@@ -892,7 +901,9 @@ background-color: var(--background-color-white);
 .ns_online div {
   width: .5em;
   height: auto;
+
   padding: 1em;
+
   background-color: var(--background-color-nintendo-red);
 }
 
@@ -949,6 +960,10 @@ background-color: var(--background-color-white);
 
 
 
+
+/**************************/
+/********* @MEDIA *********/
+/**************************/
 /* RESPONSIVE */
 @media (min-width: 48em) {
 
@@ -965,7 +980,7 @@ background-color: var(--background-color-white);
 /* menu komt te voorschijn in de main */
     .uitgeklapt_menu {
       padding-top: 5em;
-      width: 7%;
+      width: 6.5%;
       height: auto;
       background: none;
     
@@ -1026,9 +1041,9 @@ background-color: var(--background-color-white);
 
 
 
-@media (min-width: 72em) {
+@media (min-width: 64em) {
 
-  /* Muchroom animati in de nav*/
+  /* Muchroom animatie in de nav*/
     .mushroom {
       display: block;
       animation-name: mushroom;
@@ -1063,18 +1078,49 @@ background-color: var(--background-color-white);
       display: flex;
       flex-direction: row;
       align-items: center;
-     justify-content: space-evenly;
+      justify-content: space-evenly;
       flex-wrap: nowrap;
     }
     
-    /* news feed smaller gemaakt, zodat het smaller oogt */
-    .news_feed {
-      width: 40em;
+    /* news_feed grid gegeven*/
+    .news_feed ul {
+      max-width: 55em;
+      border-radius: .5em;
+
+      display: grid;
+      /* fraction drie rijen */
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:10px;
+    }
+
+    .news_feed ul li:nth-of-type(1),
+    .news_feed ul li:nth-of-type(7) {
+      /* over twee fracties heen */
+      grid-column: span 2;
+    }
+
+    .news_feed ul li:nth-of-type(2) img,
+    .news_feed ul li:nth-of-type(6) img {
+      height: 98.5%;
+    }
+
+
+    .news_feed img {
+      max-width: 100%;
       border-radius: .5em;
     }
 
-     /* Slider mag langzamer gaan voor overloop*/
-     @keyframes infiniteslider {
+    /* latest_games smaller gemaakt, zodat het in een row komt */
+    .latest_games {
+      max-width: 28em;
+    
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+     /* Slider mag langzamer gaan voor overloop */
+  @keyframes infiniteslider {
       from {
         transform: translateX(0%);
       }
@@ -1084,5 +1130,18 @@ background-color: var(--background-color-white);
       }
     }
 
+    /* Styling voor 2 sections naast elkaar */
+    div {
+      display: flex;
+      flex-direction: row;
+    }
 
 }
+
+
+
+
+/* Vragen */
+/* Mag een section in een section bij latest games, 
+of moet het vervangen worden door een div door styling*/
+/* Hulp nodig met hamburger-menu animatie */
