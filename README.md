@@ -82,7 +82,7 @@ Nintendo familie
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-Wat erg goed ging is het kiezen van een website en een begin maken. Helaas was veel weggezakt voor mij waardoor ik even opnieuw kennisclips heb moeten kijken voor verfrissing. 
+Wat erg goed ging is het kiezen van een website en een begin maken. Helaas was veel weggezakt voor mij waardoor ik even opnieuw kennisclips heb moeten kijken voor verfrissing. De meer ik bezig was en weer ging sleutelen aan code de meer weer omhoog kwam. De breakdown schets maken ging wat makkelijker omdat de student-assistenten mij daar ook bij hebben geholpen. 
 
 <img src="images/startvanmijnwebsite.png" width="375px" alt="start van mijn website">
 <img src="images/Menugelukt.png" width="375px" alt="menu gelukt">
@@ -108,7 +108,9 @@ Uitkomst feedback
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-Deze week heb ik veel gewerkt aan mijn website. Ik ben een stuk verder gekomen waardoor de basis er goed in zit voor beide pagina's. Nu ben ik bezig met animaties toevoegen wat ik nog wel lastig vind, zoals bij de slider. Ik vind dit erg leuk en blijf sleutelen tot iets lukt. 
+Deze week heb ik veel gewerkt aan mijn website. Ik ben een stuk verder gekomen waardoor de basis er goed in zit voor beide pagina's. Nu ben ik bezig met animaties toevoegen wat ik nog wel lastig vind, zoals bij de slider. Ik vind dit erg leuk en blijf sleutelen tot iets lukt.  Door de feedback van vorige week en deze week heb ik erg veel classes vervangen door :nth-of-type. Dit was nieuw voor mij en kwam er achter hoe makkelijk het eigenlijk te gebruiken is. Divs heb ik mede hierdoor ook vervangen. Ik had nog niet overal notities maar die heb ik overal toegevoegd. Wanneer je op de menu button ging hoveren was er geen cursor pointer maar nu wel. 
+
+
 <img src="images/latestgames.png" width="375px" alt="latest games">
 <img src="images/slider.png" width="375px" alt="">
 
@@ -173,7 +175,7 @@ Door te tabben skipt het opties
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-Deze week ben ik echt bezig met responsive maken en darkmode. Ik probeer nog meer animaties toe te voegen omdat ik het leuk vind. Ook wil ik al mijn code weer langs om het nog netter te maken en om te kijken of ik overbodige code heb die niet nodig is. Ook ben ik bezig geweest met grid op mijn index.html op section news_feed!
+Deze week ben ik echt bezig met responsive maken en darkmode. Ik probeer nog meer animaties toe te voegen omdat ik het leuk vind. Ook wil ik al mijn code weer langs om het nog netter te maken en om te kijken of ik overbodige code heb die niet nodig is. Ook ben ik bezig geweest met grid op mijn index.html op section news_feed! Voor de laatste loodjes wil ik nog wat bevindingen uit de test verwerken, zoals bepaalde letters groter maken en dat sommige elementen een heldere hover krijgen. 
 
 <img src="images/darkmode.png" width="375px" alt="dark mode">
 <img src="images/lightmode.png" width="375px" alt="light mode">
@@ -183,12 +185,9 @@ Deze week ben ik echt bezig met responsive maken en darkmode. Ik probeer nog mee
 <img src="images/grid.png" width="375px" alt="grid">
 
 ### Feedback ronde: 3
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Html/css/javascript ziet er erg netjes en duidelijk uit
+- Sections in latest_games kan je een article van maken omdat het een article is
+- In het proces verslag ook de feedback noteren hoe je het hebt aangepast
 
 </details>
 
@@ -202,7 +201,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Laatste loodjes: Sommige elementen op de tweede pagina nog mooier responsive maken. Beoordelings formulier erbij houden en eventueel nog hier en daar wat aanpassen. Feedback en test bevindingen nog verwerken. 
 
 ### Screenshot(s)
 

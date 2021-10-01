@@ -4,5 +4,5 @@ var hetMenu = document.querySelector(".uitgeklapt_menu");
 deButton.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-  hetMenu.classList.toggle('toonMenu');
+    hetMenu.classList.toggle('toonMenu');
 }

@@ -43,7 +43,7 @@ h2 {
 
 
 /*******************/
-/* CODE VOOR ROOT" */
+/* CODE VOOR "ROOT" */
 /*******************/
 :root {
   --background-color-nintendo-red:#e60012;
@@ -53,6 +53,7 @@ h2 {
   --background-color:black;
   --background-color-black:black;
   --background-color-lightgray:lightgray;
+  --background-color-lightyellow:lightyellow; 
 
   --background-color-white-opacity:rgba(255, 255, 255, .95);
   --secondary-background-color:rgba(0 0 0 / .75);
@@ -77,6 +78,7 @@ h2 {
     --background-color-white-opacity:rgba(0, 0, 0, 0.95);
     --fourth-color-orange:rgb(124, 81, 0);
     --background-color-lightgray:darkgray;
+    --background-color-lightyellow:rgb(132, 191, 196); 
   }
 }
 
@@ -161,7 +163,8 @@ nav button {
 
 .hamburger_menu:hover {
   transform: translateY(-.5em);
-}
+} 
+
 
 .hamburger_menu span {
   margin-top: 4px; 
@@ -176,10 +179,10 @@ nav button {
   background-color: var(--background-color-white);
 }
 
+/* mushroom animatie */
 .mushroom {
   display: none;
 }
-
 
 /*****NOG MEE BEZIG******
 .hamburger_menu span:nth-of-type(1) {
@@ -232,15 +235,12 @@ nav button {
     opacity: 0;
   }
 } 
-
 */
-
 
 
 /***********************************/
 /* CODE VOOR class .uitgeklapt_menu*/
 /***********************************/
-/*********************************/
 .uitgeklapt_menu {
   position: fixed;
 
@@ -290,6 +290,10 @@ nav button {
   position: relative;
 }
 
+.uitgeklapt_menu li:hover {
+  background-color: var(--background-color-nintendo-dark-red);
+}
+
 
 .uitgeklapt_menu li h2 {
   position: absolute;
@@ -305,7 +309,6 @@ nav button {
   font-size: xx-small;
   color: var(--accent-color);
 }
-/*********************************/
 
 
 /********************/
@@ -315,7 +318,6 @@ footer {
   background-color: var(--background-color-nintendo-dark-red) ;
   width: 100%;
 }
-
 
 /* CODE VOOR HEADER IN FOOTER */
 .header_footer {
@@ -363,6 +365,7 @@ select {
 
   display: flex;
   flex-direction: column;
+
   background-color: var(--background-color-nintendo-dark-red);
 }
 
@@ -402,9 +405,9 @@ select {
 
 
 /* Code voor HOME ***********************************************/
-/******************************************/
+/*******************************************/
 /* CODE VOOR SECTION MET class="news_feed" */
-/******************************************/
+/*******************************************/
 .news_feed {
   top: 0;
   margin: .2em;
@@ -440,9 +443,9 @@ select {
 }
 
 
-/*************************************/
-/* CODE PER H2 IN SECTION .news_feed */
-/*************************************/
+/********************************************/
+/* CODE PER H2 IN SECTION class="news_feed" */
+/********************************************/
 /* CODE VOOR li MET h2_onder_met_omlijning */
 .news_feed li:nth-of-type(1),
 .news_feed li:nth-of-type(4) {
@@ -502,7 +505,7 @@ select {
 }
 
 
-/* CODE VOOR li MET h2_metgradient" */
+/* CODE VOOR li MET h2_met_gradient */
 .news_feed li:nth-of-type(3) {
   position: relative;
 }
@@ -606,12 +609,9 @@ select {
 }
 
 
-/***********************************/
-/* CODE VOOR SECTION .latest_games */
-/***********************************/
-/***********************************/
-/* CODE VOOR SECTION .latest_games */
-/***********************************/
+/******************************************/
+/* CODE VOOR SECTION class="latest_games" */
+/******************************************/
 .latest_games {
   width: 100%;
 
@@ -644,26 +644,32 @@ select {
   border-radius: .5em;
 }
 
-.latest_games h2 {
-  background-color:var(--background-color-white);
+.latest_games h2:nth-of-type(1){
   margin-left: .20em;
   margin-right: .25em;
   margin-top: .5em;
   padding: .5em;
   
   font-size: 18px;
+  background-color:var(--background-color-white);
+  
   }
 
-  .latest_games li:hover a h2 {
+.latest_games li:hover a h2 {
     text-decoration: underline;
-    }
+  }
 
-.latest_games section{
+.latest_games li:hover a img {
+    transform: scale(1.05);
+    transition: .5s;
+  }
+
+.latest_games article{
   display: flex;
   flex-direction: column;
 }
 
-.latest_games section h2 {
+.latest_games article h2 {
   padding: .5em;
   font-size: 16px;
 }
@@ -675,8 +681,7 @@ select {
   color: gray;
 }
 
-
-.latest_games a{
+.latest_games a {
   padding: .5em;
   margin-left: .20em;
   margin-right: .25em;
@@ -691,9 +696,10 @@ select {
   font-weight: bold;
 } 
 
-/**********************************/
-/* CODE VOOR SECTION .social_media */
-/**********************************/
+
+/******************************************/
+/* CODE VOOR SECTION class="social_media" */
+/******************************************/
 .social_media {
   margin: 2em 0 2em 0;
   padding: 1em;
@@ -731,9 +737,9 @@ select {
 
 
 /* NINETDO FAMILIE PAGINA*****************************************/
-/*****************************/
-/* CODE VOOR SECTION ns_models*/
-/*****************************/
+/***************************************/
+/* CODE VOOR SECTION class="ns_models" */
+/***************************************/
 .ns_models {
   margin-top: .2em;
 
@@ -766,14 +772,13 @@ select {
   color: var(--accent-color);
 }
 
-
 .ns_models li p:last-of-type {
   margin: 0 auto;
 
   margin-top: 1em;
   margin-bottom: 5em;
   padding: .5em 4em .5em 4em;
-  width: 50%;
+  width: 70%;
 
   border: #c40010 2px solid;
   background-color: var(--background-color-nintendo-dark-red);
@@ -799,9 +804,9 @@ select {
 }
 
 
-/****************************/
-/* CODE VOOR SECTION buttons*/
-/****************************/
+/*************************************/
+/* CODE VOOR SECTION class="buttons" */
+/*************************************/
 .buttons {
   width: 100%;
 
@@ -817,8 +822,8 @@ select {
   margin: 1em;
   padding: 1em;
 
-  width: 20em;
-  height: 4em;
+  width: 90%;
+  
 
   border: solid 1px;
   background-color: var(--background-color-nintendo-red);
@@ -836,9 +841,11 @@ select {
   color: var(--accent-color);
   text-decoration: none;
 }
-/*****************************/
-/* CODE VOOR SECTION ns_online*/
-/*****************************/
+
+
+/***************************************/
+/* CODE VOOR SECTION class="ns_online" */
+/***************************************/
 .ns_online {
   width: 100%;
   margin-top: 1em;
@@ -857,6 +864,10 @@ select {
 
   text-decoration: none;
   color:var(--secondary-color);
+}
+
+.ns_online a:hover {
+  background-color: var(--background-color-lightyellow);
 }
 
 .ns_online a:first-of-type h2 {
@@ -878,7 +889,6 @@ select {
 .ns_online a:last-of-type h2:first-letter {
   font-size: xx-large;
 } 
-
 
 .ns_online p {
   margin: 1em 1em 1em 1em;
@@ -902,21 +912,10 @@ select {
   background-color: var(--background-color-lightgray);
 } 
 
-.ns_online div {
-  width: .5em;
-  height: auto;
-
-  padding: 1em;
-
-  background-color: var(--background-color-nintendo-red);
-}
-
-
-/***************************/
-/* CODE VOOR SECTION slider*/
-/***************************/
+/************************************/
+/* CODE VOOR SECTION class="slider" */
+/************************************/
 .slider {
-  /* background-image:url('images/carousel1.jpeg'); */
   margin: 1em 0 1em 0;
   padding: 3em;
 
@@ -964,14 +963,51 @@ select {
 
 
 
-
 /**************************/
 /********* @MEDIA *********/
 /**************************/
 /* RESPONSIVE */
+
+/* speciaal voor iphone se */
+@media (max-width: 20em){
+
+ /* nav elementen geheel kleiner */
+  nav img {
+    max-width: 2em;
+    height: auto;
+  }
+
+  nav li:nth-of-type(1) {
+    margin-right: 1em;
+  }
+
+  nav li:nth-of-type(1) img {
+    max-width: 3.5em;
+  }
+
+  nav a {
+    /* Opmaak tekst*/
+    font-weight: bold;
+    font-size:xx-small;
+  }
+
+ /* uitgeklapt_menu elementen geheel kleiner */
+  .uitgeklapt_menu li {
+    width: 4em;
+    height: 5em;
+  }
+  
+  .uitgeklapt_menu li img {
+    width: 2em;
+  }
+}
+
+
+
+
 @media (min-width: 48em) {
 
-  /*winkelwagen komt te voorschijn*/
+  /* winkelwagen komt te voorschijn */
     nav ul li:nth-of-type(3){
       display:block;
     }
@@ -1035,7 +1071,7 @@ select {
       }
     
       to {
-        transform: translateX(85%);
+        transform: translateX(100%);
       }
     }
 
@@ -1066,11 +1102,12 @@ select {
       }
     }
 
-    /* NS models in een row rij (tweede-pagina)*/
+    /* NS models in een row (tweede-pagina)*/
     .ns_models ul {
       display: flex;
       flex-direction: row;
-      align-items: flex-end;
+      padding-right: 6em;
+      align-items: baseline;
     }
     
     /* Buttons in een row rij (tweede-pagina)*/
@@ -1086,7 +1123,7 @@ select {
       flex-wrap: nowrap;
     }
     
-    /* news_feed grid gegeven*/
+    /* news_feed grid gegeven */
     .news_feed ul {
       max-width: 55em;
       border-radius: .5em;
@@ -1134,12 +1171,11 @@ select {
       }
     }
 
-    /* Styling voor 2 sections naast elkaar */
+    /* Styling voor 2 sections naast elkaar news_feed en latest_games */
     div {
       display: flex;
       flex-direction: row;
     }
-
 
     /* eerste list item gaat naar het midden */
     .ns_models li:nth-of-type(3){
@@ -1150,17 +1186,8 @@ select {
       display:none;
     }
 
+    .ns_online img {
+      width: 20em;
+      height: auto;
+    }
 }
-
-
-
-
-/* Vragen */
-/* - Mag een section in een section bij latest games, 
-of moet het vervangen worden door een div door styling*/
-
-/* - Hulp nodig met hamburger-menu animatie, en ook dat het bij een 
-groterscherm mee gaat in height, schaalt nu niet mee */
-
-/* To do: Bevindingen uit test verwerken */
-/* Tweede pagina bij ns models en ns online nog even mooier maken*/ 
