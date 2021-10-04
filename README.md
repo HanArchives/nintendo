@@ -257,10 +257,7 @@ Ik heb de hamburger menu eindelijk voor elkaar gekregen. Ik heb javascript met e
 <p> Eind versie home pagina</p>
 <img src="images/eindhomedesktop.png" width="500px" alt="Eind versie home pagina">
 
-<p> Eind versie Nintedo Familie pagina (desktop)</p>
-<img src="images/eindhomedesktop.png" width="500px" alt="Eind versie home pagina">
-
-<p> Eind versie Nintedo Familie pagina (desktop)</p>
+<p> Eind versie Nintendo Familie pagina (desktop)</p>
 <img src="images/eindnsfamdesktop.png" width="500px" alt="Eind versie NS Familie pagina">
 
 <p> Eind versie 48em </p>
