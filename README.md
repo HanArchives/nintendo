@@ -252,6 +252,7 @@ Ik heb de hamburger menu eindelijk voor elkaar gekregen. Ik heb javascript met e
 <img src="images/nsmodellen2.png" width="375px" alt="ns modellen desktop versie">
 
 
+ 
 ### Screenshot(s)
 
 <p> Eind versie home pagina</p>
