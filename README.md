@@ -277,7 +277,7 @@ Ik heb de hamburger menu eindelijk voor elkaar gekregen. Ik heb javascript met e
 
 
 
-### Bronnenlijst
+## Bronnenlijst
 
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
