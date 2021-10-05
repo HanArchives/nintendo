@@ -39,11 +39,11 @@ Link naar de website:
 https://www.nintendo.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Home
+<p>Home</p>
 <img src="images/home.png" width="100px" alt="Nintendo Home">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Nintendo familie
+<p>Nintendo familie</p>
 
 <img src="images/Nintendo-Switch-familie.png" width="100px" alt="Nintendo Familie">
  
