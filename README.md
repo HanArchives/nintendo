@@ -252,7 +252,6 @@ Ik heb de hamburger menu eindelijk voor elkaar gekregen. Ik heb javascript met e
 <img src="images/nsmodellen2.png" width="375px" alt="ns modellen desktop versie">
 
 
- 
 ### Screenshot(s)
 
 <p> Eind versie home pagina</p>
@@ -262,15 +261,15 @@ Ik heb de hamburger menu eindelijk voor elkaar gekregen. Ik heb javascript met e
 <img src="images/eindnsfamdesktop.png" width="500px" alt="Eind versie NS Familie pagina">
 
 <p> Eind versie 48em </p>
-<img src="images/eindipad.png" width="500px" alt="Eind versie 48em>
+<img src="images/eindipad.png" width="500px" alt="Eind versie 48em">
 
 <p> Eind versie mobiel </p>
-<img src="images/eindmobiel.png" width="500px" alt="Eind versie mobiel>
+<img src="images/eindmobiel.png" width="500px" alt="Eind versie mobiel">
 
 <p> Eind versie darkmode</p>
-<img src="images/einddark.png" width="500px" alt="Eind darkmode>
+<img src="images/einddark.png" width="500px" alt="Eind darkmode">
 
-<img src="images/einddark2.png" width="500px" alt="Eind darkmode>
+<img src="images/einddark2.png" width="500px" alt="Eind darkmode">
 
 </details>
 
