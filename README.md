@@ -1,1 +1,1 @@
-<p> School project: </p>
+<p> School project: front-end</p>
